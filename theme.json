@@ -1,0 +1,9 @@
+{
+  "name": "halva",
+  "ext_button": {
+    "LabelUpperCase": false
+  },
+  "_buttonset": {
+    "LabelUpperCase": false
+  }
+}
