@@ -1,0 +1,46 @@
+.user-def-files-table {
+    min-height: 113px !important;
+}
+
+.user-def-files-table div.ui-table-header,
+div.ui-table-header-scroll-space {
+    visibility: hidden;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛИЦЫ С ВЕРСИЯМИ ФАЙЛОВ */
+
+/* СТИЛИ ДЛЯ ВКЛАДОК В РЕЖИМЕ ПРОСМОТРА */
+
+.user-def-files-table span img {
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+
+/* СТИЛИ ДЛЯ ВКЛАДОК В РЕЖИМЕ ПРОСМОТРА */
+
+/* Файлы. Переделка таблички с файлами*/
+.user_def_files-table .user_def_line-parent .firstCell::before {
+    content: '' !important;
+}
+
+.user_def_files-table .hasChilds .firstCell {
+    background-color: #009999 !important;
+    border-radius: 8px 8px 0px 0px !important;
+}
+
+.user_def_files-table .user_def_line-node firstCell {
+    background-color: #009999 !important;
+    border-radius: 0px 0px 8px 8px !important;
+}
+
+/* убрать вертикальный скроллинг в таблице */
+.user-def-files-table .ui-table-wrapper {
+    overflow-y: auto !important;
+}
+
+/* Таблица с файлами. Првидедение строк к виду отдельных блоков */
+
+.user-def-files-table .ui-columns-table .ui-table-header-wrapper {
+    display: none !important;
+}
