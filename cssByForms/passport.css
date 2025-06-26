@@ -1,0 +1,828 @@
+/* Серые заголовки */
+
+.user-def-logical_block .user-def-gray-title .label {
+  height: 100% !important;
+  color: #747781 !important;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px !important;
+}
+
+.user-def-gray-title .label {
+  height: 100% !important;
+  color: #747781 !important;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px !important;
+}
+
+.user-def-gray-title .jq_default__input_invalid__tip .tt-content {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  font-family: Roboto, sans-serif !important;
+  border-color: #E93131;
+  color: #fff;
+  background-color: #E93131 !important;
+  opacity: 1;
+}
+
+.user-def-gray-title24 .jq_default__input_invalid__tip {
+  opacity: 0.8 !important;
+}
+
+.user-def-logical_block .user-def-gray-title24 .label {
+  height: 100% !important;
+  color: #747781 !important;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px !important;
+}
+
+.user-def-gray-title24 .label {
+  height: 100% !important;
+  color: #747781 !important;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px !important;
+}
+
+.user-def-gray-title24 .jq_default__input_invalid__tip .tt-content {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  font-family: Roboto, sans-serif !important;
+  border-color: #E93131;
+  color: #fff;
+  background-color: #E93131 !important;
+  opacity: 1;
+}
+
+.user-def-gray-title .jq_default__input_invalid__tip {
+  opacity: 0.8 !important;
+}
+
+
+
+/* .user-def-grid-28-11-20 {
+  grid-template-columns: 28fr 11fr 20fr;
+  margin-top: 15px;
+} */
+.user-def-grid-280-115-200 {
+  grid-template-columns: 280fr 115fr 200fr;
+  margin-top: 15px;
+}
+
+
+.user-def-logical_blocks_outer_grig {
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-gap: 12px !important;
+}
+
+/* .user-def-grid-22-14-7 {
+  grid-template-columns: 22fr 9fr 12fr !important;
+} */
+.user-def-grid-213-90-120 {
+  grid-template-columns: 213fr 90fr 120fr !important;
+}
+
+.user-def-grid-249-250 {
+  grid-template-columns: 249fr 250fr !important;
+}
+
+.user-def-ne_utratil_silu_hover:hover::after {
+  content: '🛈   При установке данной отметки ОРД сохраняет действие при УД всех приложений к нему до его непосредственной отмены другим ОРД или окончанием его срока действия. 🛈   Для активации чекбокса добавьте ПД РегД';
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+  z-index: 1;
+  background: rgba(255, 255, 230, 0.9);
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.user-def-pd-r_4_panel .jq-style-default.jq-panel-wrapper.tooltip-area.tooltip-anchor.hideHeader.no-flex-parent { /*2605*/
+    padding-right: 4px !important;
+}
+
+[data-task-name="Паспорт"] [data-control-name="Контейнер_с_вкладками_1"] {
+    padding-right: 4px;
+}
+
+[data-control-name="abs_Просмотр_паспорта_1"] [data-control-name="Контейнер_с_вкладками_1"] {
+    padding-right: 4px;
+}
+
+/* верхние вкладкпи */
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs) .tab-head-container .closable-tab .innerText:after,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs) .tab-head-container .head-tab-item .innerText:after,
+.vcm-theme-halva .vcm-runtime .widget-selector-htab:not(.user-def-main-tabs) .tab-head-container .closable-tab .innerText:after,
+.vcm-theme-halva .vcm-runtime .widget-selector-htab:not(.user-def-main-tabs) .tab-head-container .head-tab-item .innerText:after {
+  /* background: #EBEEF1;
+  content: "";
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  transition: 0.2s ease-in-out;
+  width: 1px; */
+}
+
+/*Вкладки контейнера для ПД НАЧАЛО */
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .head-tab-item {
+  background: #fff !important;
+  border: none !important;
+  border-radius: none !important;
+  height: 36px !important;
+  padding: 0 20px 0 20px !important;
+  transition: 0.2s ease-in-out;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .tab-head {
+  left: 24px;  /*0306*/
+  border: 1px solid #E3E8ED;
+  width: auto;
+  border-radius: 8px !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-ord-tabs .tab-head-container .head-tab-item.active {
+  background: #009999 !important;
+  cursor: default;
+  z-index: 2;
+  color: #1A1A1C !important;
+  border-radius: 8px !important;
+}
+
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs) .tab-head-container .head-tab-item,
+.vcm-theme-halva .vcm-runtime .widget-selector-htab:not(.user-def-main-tabs) .tab-head-container .head-tab-item {
+  background: #fff !important;
+  border: none !important;
+  height: 27px !important;
+  padding: 0 25px 0 10px !important;
+  transition: 0.2s ease-in-out;
+}
+
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .tab-head li:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .tab-head li:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container {
+  height: 38px !important;
+  margin: 0;
+  width: auto !important;
+}
+
+.user-def-passport_header>.jq_text {
+  padding-left: 44px !important;
+  vertical-align: middle;
+  /*2605*/
+}
+
+.user-def-passport_header span { /*2605*/
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding-top: 13px !important;
+    line-height: 20px;
+}
+
+/* стрелка-сворачивалка */
+.vcm-theme-halva .vcm-runtime .jq-panel-header-text-default.collapsible .toolbar {
+  background: transparent !important;
+  left: auto;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.vcm-theme-halva .vcm-runtime .jq-panel-header-text-default.collapsible .toolbar .tool {
+  margin: 3px 25px 0 0;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+}
+
+.toolbar.custom-toolbar_for_header_with_line {
+  margin-right: 25px !important;
+}
+
+.vcm-theme-halva .vcm-runtime .jq-panel-header-text-default.collapsible .toolbar .tool {
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1 !important;
+  background-color: #FFF !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOSA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQuNjMwODcgMi4zOTc5TDQuNDkxOSAyLjI1ODkzTDQuMzUwNTIgMi4zOTU0NkwxLjQ2OTU4IDUuMTc3NTRMMS40NjkzOSA1LjE3NzczQzEuMTk5NDYgNS40MzY2MiAwLjc3MzY4NiA1LjQyODc4IDAuNTE0NTg0IDUuMTYwOUMwLjI1NTM5NCA0Ljg5Mjk0IDAuMjYyOTM4IDQuNDY0OTQgMC41MzA2ODkgNC4yMDY2NEwwLjUzMDc0NiA0LjIwNjU4TDQuMDMwNjQgMC44Mjc0MzFDNC4xNjI2MSAwLjcwMDE5NiA0LjMzMTA0IDAuNjM3NTczIDQuNDk5OTUgMC42Mzc1NzNDNC42NzI5NSAwLjYzNzU3MyA0Ljg0NTQ2IDAuNzAzNjcxIDQuOTc3MTYgMC44MzUzN0w4LjQ3NzE2IDQuMzM1MzdDOC43NDExOCA0LjU5OTM5IDguNzQxMTggNS4wMjU3NiA4LjQ3NzE2IDUuMjg5NzhDOC4yMTMxNCA1LjU1MzggNy43ODY3NyA1LjU1MzggNy41MjI3NSA1LjI4OTc4TDQuNjMwODcgMi4zOTc5WiIgZmlsbD0iIzMxMzEzMSIvPgo8L3N2Zz4K);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.04), 0px 8px 5px 0px rgba(0, 0, 0, 0.03), 0px 15px 6px 0px rgba(0, 0, 0, 0.01), 0px 23px 6px 0px rgba(0, 0, 0, 0);
+
+}
+
+.vcm-theme-halva .vcm-runtime .jq-panel-header-text-default.collapsible .toolbar .tool.collapsible.expand {
+  transform: rotate(180deg);
+
+}
+
+.user-def-panel_with_tollbar .jq-panel-header-text-default span {
+  line-height: 20px !important;
+}
+
+.user-def-tematika_header .jq-panel-header-text-default span {
+  padding-top: 8px !important;
+}
+
+/* строка стрелки сворачивалки */
+.user-def-tematika_header .jq-panel-wrapper .jq-panel-header-text-default.collapsible {
+  background: #009999 !important;
+}
+
+.user-def-tematika_header_rd .jq-panel-wrapper .jq-panel-header-text-default.collapsible {
+  background: #ba8f4c !important;
+}
+
+.user-def-panel_header .jq-panel-wrapper .jq-panel-header-text-default.collapsible {
+  border: none !important;
+  height: 36px !important;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  left: 10px;
+  width: calc(100% - 20px);
+}
+
+.user-def-panel_header .jq-panel-wrapper .jq-panel-header-text-default.collapsible span {
+  font-weight: 600 !important;
+}
+
+.user-def-panel_with_tollbar>div>.jq-panel-header-text-default.collapsible .toolbar {
+  margin-top: 5px !important;
+  /* margin-right: -5px !important; */
+}
+
+
+/* ИНФОРМИРОВАНИЕ, ПОЗЖЕ ЗАМЕНИТЬ НА НОРМАЛЬНЫЕ КЛАССЫ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+[data-control-name="Информирование_рамка_1"] .jq-panel-body-default.jq-body-panel {
+  padding: 0;
+}
+
+[data-control-name="Многострочное_поле_ввода_Поле_ввода_Детали_рассылки"] {
+  margin: 0;
+}
+
+[data-control-name="Панель_Информирование"] [data-control-name="Файлы_1"] {
+  margin-top: 12px;
+}
+
+
+/* группа кнопок файлов */
+.user-def-files-buttons {
+  background-color: white;
+  border-radius: 0 0 10px 10px !important;
+}
+
+
+[data-control-name="Файлы_1"] [data-control-name="Таблица_1"] .ui-columns-table {
+  border-radius: 10px;
+   max-height: 100% !important;
+}
+
+[data-control-name="Файлы_1"] [data-control-name="Таблица_1"] .vcm-widget-wrapper.jq_default__grid.columns {
+  border-radius: 10px 10px 0 0;
+}
+
+/* [data-control-name="Тематика_документа_рамка_1"] {
+  margin-top: 10px;
+} */
+
+.vcm-theme-halva .vcm-runtime .widget .field_container .top[style*="display:none"] {
+  /*01.042025 +not  :not(.user-def-otvetst-head) */
+  display: block !important;
+  height: 20px !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget.user-def-otvetst-head .field_container .top[style*="display:none"] {
+  display: none !important;
+  height: 0 !important;
+}
+
+.user-def-sub_first_block_flex {
+  gap: 16px !important;
+  display: flex;
+  flex-flow: column;
+  flex: 4.8 1 0px;
+}
+
+.user-def-shadowMaket {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.05),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.04),
+    0px 8px 5px 0px rgba(0, 0, 0, 0.03),
+    0px 15px 6px 0px rgba(0, 0, 0, 0.01),
+    0px 23px 6px 0px rgba(0, 0, 0, 0)
+}
+
+.user-def-annotation_ord {
+  background-color: #ffffff !important;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+.user-def-kolvosimvolov {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.user-def-informirovanie_block .jq-panel-body-default.jq-body-panel {
+  border-radius: 8px !important;
+}
+
+.user-def-p-t-3_span span {
+  padding-top: 3px !important;
+  /*2605*/
+}
+
+.user-def-select_user_one .jq-panel-body-default.jq-body-panel {
+  height: 100% !important;
+}
+
+.user-def-block_nalit_pril,
+.user-def-block_nalit_pril .jq-panel-body-default.jq-body-panel {
+  height: 100% !important;
+  padding: 0px !important;
+  border-radius: 8px !important
+}
+
+
+.user-def-logical_block>div>div {
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.user-def-naimenovanie_ord {
+  background-color: #ffffff !important;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.user-def-kratkoenaimenovanie_ord {
+  background-color: #ffffff !important;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*padding-bottom: 6px;*/
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: 12px;
+  border-radius: 8px !important;
+}
+
+.user-def-36height {
+    min-height: 36px !important;
+    flex: 36 0 0px !important;
+}
+
+.user-def-primechanie_ord,
+.user-def-details_ras {
+  background-color: #ffffff !important;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+}
+
+.user-def-details_ras .fields-wrapper.input-border {
+    height: 32px !important;
+}
+
+.user-def-details_ras .textarea.text_field.tooltip-area {
+    padding: 0px 4px 0px 8px !important;
+    transition: 0.3s ease-in-out;
+    width: 100% !important;
+}
+
+.user-def-primechanie_ord {
+  margin-top: 12px;
+}
+
+.user-def-height100 {
+  height: 100% !important;
+}
+
+.user-def-height80 {
+  height: 80% !important;
+}
+
+.user-def-padding0 .jq-panel-body-default.jq-body-panel {
+  padding: 0px !important;
+}
+
+
+.user-def-osn_rec_block>div>div {
+  border-radius: 8px;
+}
+
+.user-def-doc_them_block>div>div {
+  border-radius: 8px;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+
+/* ВРЕМЕННО ЗАКОММЕНТИЛ laninia */
+.user-def-logical_block>div>div {
+  border-radius: 8px;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.user-def-inf_form_ras {
+  background: white;
+}
+
+.user-def-inf_data_ras {
+  background: white;
+  border-top-right-radius: 10px;
+}
+
+.user-def-checkbox_start.widget-ext-checkbox {
+  align-self: start !important;
+}
+
+.user-def-btn_tabl_sv .graphbutton .image img {
+    width: 38px !important;
+    height: 38px !important;
+}
+
+.user-def-btn_tabl_sv .graphbutton {
+    width: 38px !important;
+    margin: 4px 8px !important;
+}
+
+.user-def-btn_tabl_sv .graphbutton .image {
+    width: 38px !important;
+    height: 38px !important;
+}
+
+
+.vcm-theme-halva .vcm-runtime .user-def-radioORD .jq-input-radio .edging {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 0px solid #BFC7DA !important;
+  box-shadow: 0 0 0px 0px #ebeef3 !important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  z-index: 0;
+  top: 1px !important;
+  left: 0;
+}
+
+
+
+.vcm-theme-halva .vcm-runtime .user-def-radioORD .jq-input-radio .field_container .top .label span.label-text {
+  white-space: nowrap;
+  padding-top: 5px !important;
+  padding-right: 3px;
+  padding-bottom: 10px;
+  color: #747781 !important;
+}
+
+.user-def-radioORD .jq-input-radio.jq-style-default.stop-propagation-for-panel {
+  /*26.05*/
+  padding: 0px !important;
+  /* padding-left: 0px !important; */
+}
+
+.user-def-handOtv .jq_text {
+  /*26.05*/
+  padding-top: 16px !important;
+  padding-bottom: 0px !important;
+}
+
+.user-def-headHandOtv .jq_text {
+  /*26.05*/
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+/* Выбор из двух  НАЧАЛО  25.04.2025*/
+.user-def-two188 {
+  min-width: 135px !important;
+}
+
+.user-def-two196 {
+  min-width: 148px !important;
+}
+
+.user-def-toolbarpanel .jq-panel-header-text-default.collapsible .toolbar .tool {
+  /*26.05*/
+  margin: 0px 20px 0px 0px !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 24px !important;
+}
+
+.user-def-toolbarpanelDiv .jq-panel-header-text-default.collapsible .toolbar .tool {
+  /*26.05*/
+  margin: 0px -5px 0px !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 24px !important;
+}
+
+.user-def-two_options.widget-ext-radiogroup .boxes_wrapper .column .center .radiobutton {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 6px;
+  border-color: #BFBFBF;
+  height: 16px !important;
+  transition: 0.2s ease-in-out;
+  width: 16px;
+}
+
+.user-def-two_options .top.row {
+  margin: 0px !important;
+}
+
+.user-def-two_options .boxes_wrapper {
+  padding: 10px 0px 0px 0px !important;
+}
+
+.user-def-two_options span.label-text {
+  padding-left: 0px !important;
+}
+
+.user-def-two_options .spacer {
+  height: 0px !important;
+}
+
+.user-def-two_options .jq-style-default .field_container .req_img {
+  border-bottom: 0px solid transparent !important;
+}
+
+.user-def-two_options .boxes_wrapper {
+  margin-top: 0px !important;
+}
+
+/* Выбор из двух ОКОНЧАНИЕ*/
+
+.user-def-select_user_one {
+  /*margin-top: 12px;*/
+  background-color: #ffffff !important;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px !important;
+}
+
+.user-def-select_user_two {
+  /*margin-top: 12px;*/
+  background-color: #ffffff !important;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 7px;
+  border-radius: 8px !important;
+}
+
+/*Преждающая плашка НАЧАЛО */
+
+/*Иконка внимание прозрачный фон*/
+.user-def-warning_transparent {
+  top: 5px !important;
+  position: absolute !important;
+  left: 20px !important;
+}
+
+.user-def-radiustable .table-tooltip-anchor {
+  border-radius: 8px !important;
+}
+
+.user-def-radiustable .stop-propagation-for-panel {
+  border-radius: 8px !important;
+}
+
+/*Треввожно-оранжевый*/
+.user-def-warning_color {
+  background-color: #ee4e4e;
+  height: 36px !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  flex-flow: row !important;
+  align-items: center;
+}
+
+.user-def-warning_text .vcm-widget-wrapper.top-padding {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAyMCAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjAxMTggMTIuMDc5N0wxNi4zNDgzIDEyLjQyOTNWMTIuNDI5M0wxNy4wMTE4IDEyLjA3OTdaTTEzLjUzMDUgNS40NzMxNEwxNC4xOTQgNS4xMjM1TDE0LjE5NCA1LjEyMzVMMTMuNTMwNSA1LjQ3MzE0Wk02LjQ2OTYzIDUuNDczMTRMNS44MDYxMiA1LjEyMzVMNi40Njk2MyA1LjQ3MzE0Wk0yLjk4ODM3IDEyLjA3OTdMMy42NTE4OSAxMi40MjkzSDMuNjUxODlMMi45ODgzNyAxMi4wNzk3Wk0xMS4wNTcyIDEuODkyNTFMMTEuMzY1IDEuMjA4NThWMS4yMDg1OEwxMS4wNTcyIDEuODkyNTFaTTguOTQyOTIgMS44OTI1MUw5LjI1MDcxIDIuNTc2NDRMOC45NDI5MiAxLjg5MjUxWk0xNy4yOTAzIDE3LjA3NzRMMTcuNzA1IDE3LjcwMjNIMTcuNzA1TDE3LjI5MDMgMTcuMDc3NFpNMTguMzE2OCAxNS41MDEzTDE3LjU3NTcgMTUuMzg1OVYxNS4zODU5TDE4LjMxNjggMTUuNTAxM1pNMi43MDk5MSAxNy4wNzc0TDIuMjk1MTkgMTcuNzAyM0gyLjI5NTE5TDIuNzA5OTEgMTcuMDc3NFpNMS42ODMzNSAxNS41MDEzTDIuNDI0NDIgMTUuMzg1OUwxLjY4MzM1IDE1LjUwMTNaTTEwLjc1MDEgNy40OTY2NUMxMC43NDgyIDcuMDgyNDUgMTAuNDEwOSA2Ljc0ODE3IDkuOTk2NzIgNi43NTAwM0M5LjU4MjUxIDYuNzUxODkgOS4yNDgyMyA3LjA4OTE4IDkuMjUwMDkgNy41MDMzOUwxMC43NTAxIDcuNDk2NjVaTTkuMjY4NzggMTEuNjdDOS4yNzA2NCAxMi4wODQyIDkuNjA3OTMgMTIuNDE4NSAxMC4wMjIxIDEyLjQxNjZDMTAuNDM2NCAxMi40MTQ4IDEwLjc3MDYgMTIuMDc3NSAxMC43Njg4IDExLjY2MzNMOS4yNjg3OCAxMS42N1pNMTAuNzUwMSAxNC4xNjY3QzEwLjc1MDEgMTMuNzUyNSAxMC40MTQzIDEzLjQxNjcgMTAuMDAwMSAxMy40MTY3QzkuNTg1ODcgMTMuNDE2NyA5LjI1MDA4IDEzLjc1MjUgOS4yNTAwOCAxNC4xNjY3SDEwLjc1MDFaTTkuMjUwMDggMTQuMTc1QzkuMjUwMDggMTQuNTg5MiA5LjU4NTg3IDE0LjkyNSAxMC4wMDAxIDE0LjkyNUMxMC40MTQzIDE0LjkyNSAxMC43NTAxIDE0LjU4OTIgMTAuNzUwMSAxNC4xNzVIOS4yNTAwOFpNNi41MTg4MiAxNy41VjE4LjI1SDEzLjQ4MTNWMTcuNVYxNi43NUg2LjUxODgyVjE3LjVaTTE3LjAxMTggMTIuMDc5N0wxNy42NzUzIDExLjczMDFMMTQuMTk0IDUuMTIzNUwxMy41MzA1IDUuNDczMTRMMTIuODY3IDUuODIyNzdMMTYuMzQ4MyAxMi40MjkzTDE3LjAxMTggMTIuMDc5N1pNNi40Njk2MyA1LjQ3MzE0TDUuODA2MTIgNS4xMjM1TDIuMzI0ODYgMTEuNzMwMUwyLjk4ODM3IDEyLjA3OTdMMy42NTE4OSAxMi40MjkzTDcuMTMzMTUgNS44MjI3N0w2LjQ2OTYzIDUuNDczMTRaTTEzLjUzMDUgNS40NzMxNEwxNC4xOTQgNS4xMjM1QzEzLjYzMyA0LjA1ODc5IDEzLjE4ODEgMy4yMTI3MSAxMi43ODQxIDIuNTkzOTJDMTIuMzg0MyAxLjk4MTU0IDExLjk1MjIgMS40NzI4MSAxMS4zNjUgMS4yMDg1OEwxMS4wNTcyIDEuODkyNTFMMTAuNzQ5NCAyLjU3NjQ0QzEwLjkzMTEgMi42NTgyMSAxMS4xNjc1IDIuODYxNTcgMTEuNTI4MSAzLjQxMzlDMTEuODg0NSAzLjk1OTgzIDEyLjI5MTcgNC43MzEwNiAxMi44NjcgNS44MjI3N0wxMy41MzA1IDUuNDczMTRaTTYuNDY5NjMgNS40NzMxNEw3LjEzMzE1IDUuODIyNzdDNy43MDg0MiA0LjczMTA2IDguMTE1NyAzLjk1OTgzIDguNDcyMSAzLjQxMzlDOC44MzI2OCAyLjg2MTU3IDkuMDY5MDMgMi42NTgyMSA5LjI1MDcxIDIuNTc2NDRMOC45NDI5MiAxLjg5MjUxTDguNjM1MTMgMS4yMDg1OEM4LjA0Nzk5IDEuNDcyODEgNy42MTU4NCAxLjk4MTU0IDcuMjE2MDYgMi41OTM5MkM2LjgxMjEgMy4yMTI3MSA2LjM2NzE2IDQuMDU4NzkgNS44MDYxMiA1LjEyMzVMNi40Njk2MyA1LjQ3MzE0Wk0xMS4wNTcyIDEuODkyNTFMMTEuMzY1IDEuMjA4NThDMTAuNTAwMiAwLjgxOTM5MSA5LjQ5OTkzIDAuODE5MzkxIDguNjM1MTMgMS4yMDg1OEw4Ljk0MjkyIDEuODkyNTFMOS4yNTA3MSAyLjU3NjQ0QzkuNzI0MDMgMi4zNjM0NCAxMC4yNzYxIDIuMzYzNDQgMTAuNzQ5NCAyLjU3NjQ0TDExLjA1NzIgMS44OTI1MVpNMTMuNDgxMyAxNy41VjE4LjI1QzE0LjUyNDggMTguMjUgMTUuMzU2NSAxOC4yNTA3IDE2LjAwNDkgMTguMTk0NEMxNi42NTA2IDE4LjEzODMgMTcuMjI3NCAxOC4wMTkyIDE3LjcwNSAxNy43MDIzTDE3LjI5MDMgMTcuMDc3NEwxNi44NzU1IDE2LjQ1MjVDMTYuNzE2MiAxNi41NTgyIDE2LjQ0NiAxNi42NTA0IDE1Ljg3NTEgMTYuN0MxNS4zMDcgMTYuNzQ5MyAxNC41NTI2IDE2Ljc1IDEzLjQ4MTMgMTYuNzVWMTcuNVpNMTcuMDExOCAxMi4wNzk3TDE2LjM0ODMgMTIuNDI5M0MxNi44MjgyIDEzLjM0MDIgMTcuMTYyNSAxMy45NzYyIDE3LjM2OCAxNC40NzU1QzE3LjU3NDMgMTQuOTc2NiAxNy42MDA1IDE1LjIyNyAxNy41NzU3IDE1LjM4NTlMMTguMzE2OCAxNS41MDEzTDE5LjA1NzkgMTUuNjE2N0MxOS4xNDY3IDE1LjA0NjEgMTguOTkzMyAxNC40ODMyIDE4Ljc1NTEgMTMuOTA0NUMxOC41MTYxIDEzLjMyNCAxOC4xNDExIDEyLjYxNCAxNy42NzUzIDExLjczMDFMMTcuMDExOCAxMi4wNzk3Wk0xNy4yOTAzIDE3LjA3NzRMMTcuNzA1IDE3LjcwMjNDMTguNDI5NSAxNy4yMjE0IDE4LjkyNSAxNi40NyAxOS4wNTc5IDE1LjYxNjdMMTguMzE2OCAxNS41MDEzTDE3LjU3NTcgMTUuMzg1OUMxNy41MTAyIDE1LjgwNjYgMTcuMjYzMSAxNi4xOTUzIDE2Ljg3NTUgMTYuNDUyNUwxNy4yOTAzIDE3LjA3NzRaTTYuNTE4ODIgMTcuNVYxNi43NUM1LjQ0NzU2IDE2Ljc1IDQuNjkzMTggMTYuNzQ5MyA0LjEyNTA0IDE2LjdDMy41NTQyIDE2LjY1MDQgMy4yODM5MiAxNi41NTgyIDMuMTI0NjMgMTYuNDUyNUwyLjcwOTkxIDE3LjA3NzRMMi4yOTUxOSAxNy43MDIzQzIuNzcyNzEgMTguMDE5MiAzLjM0OTUyIDE4LjEzODMgMy45OTUyNSAxOC4xOTQ0QzQuNjQzNjggMTguMjUwNyA1LjQ3NTM1IDE4LjI1IDYuNTE4ODIgMTguMjVWMTcuNVpNMi45ODgzNyAxMi4wNzk3TDIuMzI0ODYgMTEuNzMwMUMxLjg1OTA5IDEyLjYxNCAxLjQ4NDA1IDEzLjMyNCAxLjI0NTA4IDEzLjkwNDVDMS4wMDY4NyAxNC40ODMyIDAuODUzNDM3IDE1LjA0NjEgMC45NDIyODEgMTUuNjE2N0wxLjY4MzM1IDE1LjUwMTNMMi40MjQ0MiAxNS4zODU5QzIuMzk5NjggMTUuMjI3IDIuNDI1ODkgMTQuOTc2NiAyLjYzMjE2IDE0LjQ3NTVDMi44Mzc2NiAxMy45NzYzIDMuMTcxOTIgMTMuMzQwMiAzLjY1MTg5IDEyLjQyOTNMMi45ODgzNyAxMi4wNzk3Wk0yLjcwOTkxIDE3LjA3NzRMMy4xMjQ2MyAxNi40NTI1QzIuNzM3MDYgMTYuMTk1MyAyLjQ4OTkyIDE1LjgwNjYgMi40MjQ0MiAxNS4zODU5TDEuNjgzMzUgMTUuNTAxM0wwLjk0MjI4MSAxNS42MTY3QzEuMDc1MTQgMTYuNDcgMS41NzA2MyAxNy4yMjE0IDIuMjk1MTkgMTcuNzAyM0wyLjcwOTkxIDE3LjA3NzRaTTEwLjAwMDEgNy41MDAwMkw5LjI1MDA5IDcuNTAzMzlMOS4yNjg3OCAxMS42N0wxMC4wMTg4IDExLjY2NjZMMTAuNzY4OCAxMS42NjMzTDEwLjc1MDEgNy40OTY2NUwxMC4wMDAxIDcuNTAwMDJaTTEwLjAwMDEgMTQuMTY2N0g5LjI1MDA4VjE0LjE3NUgxMC4wMDAxSDEwLjc1MDFWMTQuMTY2N0gxMC4wMDAxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
+  padding-left: 48px !important;
+  background-position: 20px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 20px !important;
+  background-repeat: no-repeat !important;
+}
+
+
+/*Иконка внимание прозрачный фон*/
+.user-def-info_transparent {
+  top: 5px !important;
+  position: absolute !important;
+  left: 20px !important;
+}
+
+.user-def-info_color {
+  background-color: #4da9e9;
+  height: 36px !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  flex-flow: row !important;
+  align-items: center;
+}
+
+.user-def-info_text .vcm-widget-wrapper.top-padding {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzk5ODlfMjQwMykiPgo8Y2lyY2xlIGN4PSI5Ljk5OTcyIiBjeT0iOS45OTk5NiIgcj0iOC4zMzMzMyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHBhdGggZD0iTTEwIDE0LjE2NjZWOS4xNjY2MyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8Y2lyY2xlIGN4PSIwLjgzMzMzMyIgY3k9IjAuODMzMzMzIiByPSIwLjgzMzMzMyIgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgOS4xNjYzOCA3LjUpIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzk5ODlfMjQwMyI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K);
+  padding-left: 48px !important;
+  background-position: 20px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 20px !important;
+  background-repeat: no-repeat !important;
+}
+
+.user-def-passport_header>.jq_text {
+  /*padding-bottom: 0 !important; */
+  /*height: 20px !important;  */
+  /*2605 убрала */
+}
+
+/*Преждающая плашка  КОНЕЦ */
+
+/* ИНФОРМИРОВАНИЕ, ПОЗЖЕ ЗАМЕНИТЬ НА НОРМАЛЬНЫЕ КЛАССЫ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+.user-def-logical_block .jq-panel-body-default.jq-body-panel {
+  padding-bottom: 0 !important;
+}
+
+/*
+[data-control-name="sub_Основные_реквизиты_РД_1"] .user-def-logical_block .jq-panel-body-default.jq-body-panel {
+  padding-bottom: 15px !important;
+}*/
+
+.user-def-radio .jq-input-radio .boxes_wrapper,
+.user-def-radio .jq-input-checkbox .boxes_wrapper {
+  margin-top: 0px !important;
+}
+
+.user-def-logical_block .vcm-widget-wrapper .jq-panel-body-default {
+  padding-top: 0px !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-fias,
+.vcm-theme-halva .vcm-runtime .widget-ext-checkbox {
+  padding:  0px; /*0306*/
+}
+
+.user-def-archive_tem.widget-fias,
+.user-def-archive_tem.widget-ext-checkbox {
+  padding-left: 0px !important;
+}
+
+/* Убррал торчащее белое подвальное поле за дивайдер 27.05.2025
+[data-control-name="Рамка_1"]>.vcm-widget-wrapper>.jq-panel-body-default {
+  padding-bottom: 100% !important;
+}
+*/
+
+/*  Паспорт ОРД  laninia*/
+.user-def-pasport_gray_bg .tab-head-wrapper,
+.user-def-pasport_gray_bg .tab-body,
+.user-def-pasport_gray_bg .tab-body .tab-item,
+.user-def-pasport_gray_bg .vcm-widget-wrapper.jq-tabs-wrapper .tab-body .tab-item[data-index="0"] .tab-item-inner>.view-frame>.element.nested-component>.element>.element.widget.widget-fieldset>.vcm-widget-wrapper>.jq-panel-body-default.jq-body-panel,
+/* .user-def-pasport_gray_bg .tab-head-wrapper .tab-head-container.resize-observe .tab-head .head-tab-item { */
+.user-def-pasport_gray_bg.user-def-header_color_black .vcm-widget-wrapper.jq-tabs-wrapper .tab-head-wrapper .tab-head-container .tab-head .head-tab-item {
+  background-color: #F7F7FA !important;
+}
+
+/*вкладки рамки*/
+
+.user-def-pasport_gray_bg .head-tab-item.active {
+  background: initial !important;
+  color: #6496bd !important;
+
+}
+
+.user-def-pasport_gray_bg {
+  padding-top: 24px !important;
+  background-color: #F7F7FA !important;
+}
+
+
+.user-def-pasport_gray_bg .vcm-widget-wrapper.jq-tabs-wrapper .tab-body .tab-item[data-index="0"] .tab-item-inner>.view-frame>.element.nested-component>.element>.element.widget.widget-fieldset>.vcm-widget-wrapper>.jq-panel-body-default.jq-body-panel::-webkit-scrollbar-track {
+  background-color: #F7F7FA !important;
+  border: none !important;
+}
+
+.user-def-pasport_gray_bg .vcm-widget-wrapper.jq-tabs-wrapper .tab-body .tab-item[data-index="0"] .tab-item-inner>.view-frame>.element.nested-component>.element>.element.widget.widget-fieldset>.vcm-widget-wrapper>.jq-panel-body-default.jq-body-panel::-webkit-scrollbar-thumb {
+  border-color: #F7F7FA
+}
+
+.user-def-pasport_gray_bg .vcm-widget-wrapper.jq-tabs-wrapper .tab-body .tab-item[data-index="0"] .tab-item-inner>.view-frame>.element.nested-component>.element>.element.widget.widget-fieldset>.vcm-widget-wrapper>.jq-panel-body-default.jq-body-panel {
+  padding-right: 1px !important;
+  /*28.04.2025  ,было 15 , убрала 1 так как договорились на 24 */
+  /*2605  ,было 5 , стало 1 так как договорились на 24 */
+  padding-left: 14px !important;
+  /*28.04.2025  ,было 15 , убрала 10 на компенсацию скроллбара*/
+}
+
+/* .user-def-pasport_gray_bg .tab-head-container.resize-observe .tab-head .head-tab-item.active .innerText { */
+.user-def-pasport_gray_bg.user-def-header_color_black .vcm-widget-wrapper.jq-tabs-wrapper .tab-head-wrapper .tab-head-container .tab-head .head-tab-item.active .innerText {
+  color: #1A1A1C !important;
+}
+
+
+
+/* Редактирование таба, активной влкадки 27.05.2025 */
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-rd-tabs .tab-head-container .closable-tab.active,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-rd-tabs .tab-head-container .head-tab-item.active,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs) .user-def-rd-tabs .tab-head-container .closable-tab.active,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-rd-tabs .tab-head-container .head-tab-item.active {
+  background: #ba8f4c !important;
+  cursor: default;
+  z-index: 2;
+  color: #1A1A1C !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .closable-tab.active .innerText,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .head-tab-item.active .innerText,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .closable-tab.active .innerText,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .head-tab-item.active .innerText {
+  color: #fff !important;
+  font-family: 'Rubik', medium !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .closable-tab .innerText,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .head-tab-item .innerText,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .closable-tab .innerText,
+.vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs).user-def-pd-tabs .tab-head-container .head-tab-item .innerText {
+  color: #747781;
+  font-size: 14px;
+  padding: 0 !important;
+  transition: 0.2s ease-in-out;
+  font-family: 'Rubik', regular !important;
+}
+
+/* Отсступы у серых зааголовком блоков 27.05.2025 */
+.user-def-gray-title24 .top.row {
+  /*margin-bottom: 0px !important;*/
+  height: 24px !important;
+}
+
+.user-def-gray-title .top.row {
+ /* margin-bottom: 0px !important;*/
+  height: 20px !important;
+}
+
+/* Краткое наименвоание смещение красной надписи по центру */
+.user-def-kratkoenaimenovanie_ord .bottom.row {
+    bottom: 6px;
+    height: 16px !important;
+    padding-top: 4px;
+}
+
+
+/* Уменьшил паддинг у инпута детлей рассылки, чтобы не было скроллинга в пустой строке */
+.vcm-theme-beauty .field_container.textarea textarea:not(.user-def-details_ras).text_field { /* 2605*/
+  resize: none;
+  height: 100%;
+  padding: 8px !important;
+}

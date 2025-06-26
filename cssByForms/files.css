@@ -1,0 +1,467 @@
+.user-def-files-table div.ui-table-header,
+div.ui-table-header-scroll-space {
+    visibility: hidden;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛИЦЫ С ВЕРСИЯМИ ФАЙЛОВ */
+
+/* СТИЛИ ДЛЯ ВКЛАДОК В РЕЖИМЕ ПРОСМОТРА */
+
+.user-def-files-table span img {
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+
+/* СТИЛИ ДЛЯ ВКЛАДОК В РЕЖИМЕ ПРОСМОТРА */
+
+/* Файлы. Переделка таблички с файлами*/
+.user_def_files-table .user_def_line-parent .firstCell::before {
+    content: '' !important;
+}
+
+.user_def_files-table .hasChilds .firstCell {
+    background-color: #009999 !important;
+    border-radius: 8px 8px 0px 0px !important;
+}
+
+.user_def_files-table .user_def_line-node firstCell {
+    background-color: #009999 !important;
+    border-radius: 0px 0px 8px 8px !important;
+}
+
+/* убрать вертикальный скроллинг в таблице */
+.user-def-files-table .ui-table-wrapper {
+    overflow-y: auto !important;
+    margin-right: 2px !important;  /*1106 до этого было 4px*/
+    padding-right: 6px;
+    background-color: white;
+	 min-height: 44px !important;  /*0306*/
+}
+
+/* Таблица с файлами. Првидедение строк к виду отдельных блоков */
+
+.user-def-files-table .ui-columns-table .ui-table-header-wrapper {
+    display: none !important;
+}
+
+.user-def-files-table .ui-columns-table {
+    max-height: 100% !important;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛИЦЫ ОТВЕТСТВЕННЫХ*/
+.user-def-otvetst-table {
+    min-height: 60px !important;
+}
+
+.user-def-otvetst-table div.ui-table-header,
+div.ui-table-header-scroll-space {
+    visibility: hidden;
+}
+
+.user-def-otvetst-table span img {
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.user-def-otvetst-table .user_def_line-parent .firstCell::before {
+    content: '' !important;
+}
+
+.user-def-otvetst-table .hasChilds .firstCell {
+    background-color: #009999 !important;
+    border-radius: 8px 8px 0px 0px !important;
+}
+
+.user-def-otvetst-table .user_def_line-node firstCell {
+    background-color: #009999 !important;
+    border-radius: 0px 0px 8px 8px !important;
+}
+
+/* убрать вертикальный скроллинг в таблице */
+.user-def-otvetst-table .ui-table-wrapper {
+    overflow-y: auto !important;
+}
+
+/* Таблица с файлами. Првидедение строк к виду отдельных блоков */
+
+.user-def-otvetst-table .ui-columns-table .ui-table-header-wrapper {
+    display: none !important;
+}
+
+/*
+.user-def-otvetst-head {
+    transform: translateX(25%) !important;
+}*/
+
+.user-def-otvetst-head .top {
+    height: 0px !important;
+}
+
+
+/* строки таблички */
+.user-def-file-table colgroup {
+    display: block;
+}
+
+
+.user-def-file-table tr {
+    display: grid;
+    /* grid-template-columns: auto 0 0px; */
+    grid-template-columns: 95%  5%;
+    justify-content: space-between;
+}
+.user-def-file-table tr:has(td:nth-child(3)) {
+   grid-template-columns: 95%  2% 3% !important;
+}
+
+/* .user-def-files-table .vcm-widget-wrapper.jq_default__grid.columns.stop-propagation-for-panel.hiddenMainHeader.autoReduceHeight.bottomBorder.topBorder { */
+    .user-def-files-table .ui-table-wrapper {
+    overflow-y: scroll !important;
+    padding-right: 10px !important;
+}
+
+.user-def-files-table .vcm-widget-wrapper.jq_default__grid.columns {
+    background-color: white !important;
+}
+
+.user-def-files-buttons div.ui-widget.buttonset.center.runtime.boxes_wrapper.horizontal>button {
+    width: 40px;
+    height: 40px;
+}
+
+.user-def-files-buttons .graphbutton {
+    margin: 0 !important;
+}
+
+.user-def-files-buttons .ui-widget.buttonset.center.runtime.boxes_wrapper.horizontal {
+    gap: 6px;
+}
+
+.user-def-file-table-parent {
+    color: #000000;
+    height: 100%;
+    display: block;
+    background-color: white !important;
+    /* border-radius: 8px 8px 0 0; */
+    /* margin-top: 16px; */
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr.selected.user-def-file-table-child.last_selected td {
+    border-radius: 10px;
+}
+
+.user-def-file-table tbody {
+    background-color: white !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr.selected.user-def-file-table-parent.last_selected,
+.vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr.selected.user-def-file-table-parent.last_selected * {
+    background-color: transparent !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr.selected.user-def-file-table-child.last_selected,
+.vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr.selected.user-def-file-table-child.last_selected * {
+    background-color: #0F5B99 !important;
+    color: white !important;
+}
+
+/* Цвет выделенной строки таблички */
+.vcm-theme-beauty .jq_default__grid .ui-table tbody tr.selected td,
+.vcm-theme-beauty .jq_default__grid .ui-table tbody tr.selected.ui-table-rows-odd td span:not(.statusForTableSvjaz) {
+    color: #0F5B99 !important;
+}
+
+/* .vcm-theme-beauty .jq_default__grid .ui-table tbody tr td,
+.vcm-theme-beauty .jq_default__grid .ui-table tbody tr.ui-table-rows-odd td span:not(.statusForTableSvjaz){
+  color: #0F5B99 !important;
+} */
+
+/*кнопка Добавить*/
+.user-def-button_add {
+    border: none;
+    color: white;
+    cursor: pointer;
+    line-height: 19px;
+    text-align: center;
+    font-size: 16px;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    /* margin: 4px 5px;*/
+    position: relative;
+    padding: 5px;
+    background-color: #3E4FA7;
+    border-radius: 6px;
+    background-position: center center;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAEG0lEQVQ4EQEQBO/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///+n///////////////kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////6f//////////////+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////p///////////////5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///+n///////////////kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////6f//////////////+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////p///////////////5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///+n////p////6f///+n////p////6f////3////////////////////p////6f///+n////p////6f///+kA/////////////////////////////////////////////////////////////////////////////////////wD/////////////////////////////////////////////////////////////////////////////////////AP////n////5////+f////n////5////+f/////////////////////////5////+f////n////5////+f////kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////6f//////////////+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////p///////////////5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///+n///////////////kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////6f//////////////+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////p///////////////5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///+n///////////////kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHT7uuVH5GrgAAAABJRU5ErkJggg==') !important;
+    background-repeat: no-repeat;
+}
+
+/*кнопка Добавить*/
+.user-def-file-table-parent .user-def-button_upload_file {
+    border: none;
+    color: white;
+    cursor: pointer;
+    line-height: 19px;
+    text-align: center;
+    font-size: 16px;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    width: 24px !important;
+    height: 24px !important;
+    /* margin: 4px 5px;*/
+    position: relative;
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 6px;
+    background-position: center center;
+
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACk0lEQVR4nM1XTU9TURB9C5Aa0jtPF7oxUfR3aFFZ4OeuQWaaNBphr/4A1gJtwqadeZhUiR8Jxo2KEmPiR+pfMCDRfyAsdKE7c24RqC3lPXgNTjLJy+28ezr3zsw5Lwj+dzuWLx0MR/WKE5smsUdO7AO88axTWY4uB8VaJjVA4spJEp1zrD9J9DuJzTu2ErHdguPZsT0lsVXEOLb7VIgGdo84PNPnRMsk+tuJPSe2s0Fuomfb+NxEDxWic8T2cv2daeyRCLP/2uxRYv1EbEuhRKeT/udw1HIk9oXE6v2FypHYoI71G4kuUrEWBrs04sohYntDYl93Bh+e6fOZii52PNa4huNvgNeD/PyBbeP8nbIt7SXT9pnrMiq/fUAhGiC2X76IUraQ9YwvuBE71QosOkeiL9IG3dzfFhzbg5bh4Ps0QbYkdoMKej1+vJ53Yj+ahkwodhXDIUlBkZjB48YH49aLIZMVu7SxhovH9Im9yW6AA+DYM8c2uWUTfbJt1aUJzFbCbN+68I5Eb3cE4mjsL5h31s/em9aisc572B1gpQ8sdjMRMLE99kO963esIJ2H+1Nconc3FkDijnUNJd814HHrBUaW7cLmYrGWQXODT2MD4853KKbmeBtqGSAwjDOQeNAlI9FXTrTW+sNI9YQniQRZxwetDoIkIKPaBnghx7oMKksL1OVnDxPrSlNRtRUCYnWQdypCwBeUvXWsHzsKARhkCuSKVw57yByZAjSe9GkGr/tjl+pgkNAaalNXkGls0H/k7ZQvOLEF8GnHPgftsQ0R22u84+90p+PtZJBEaLWGoLfV9elT3hD0ouUG3eka+hQtE/K940FqVqxlQOLgU8xbJ/oe7p/ZJrOj1YupfsJ0y/4Ab6RiFEgx1ksAAAAASUVORK5CYII=') !important; */
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlElEQVR4nO3WQQ6CMBAF0DkVMyDuJczIPed7KvQeGhN2aGpJFbD9yd+1fclkFiUqyS7V2Xs23MRwT1O/sqILws+D6dCpivEDODE6lXYP1wMascvh5zAtPP82BZbsRl0PaIKXZm/Mt51iYVZvY+Gqx3G/o5YCW66jZvX21fZ+HZbI0oZhX+frw4ouKa4YxfwUhEv+Lg8CDLcMyXY/cwAAAABJRU5ErkJggg==') !important; */
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC43NSIgeT0iMC43NSIgd2lkdGg9IjIyLjUiIGhlaWdodD0iMjIuNSIgcng9IjExLjI1IiBzdHJva2U9IiMwRjVCOTkiIHN0cm9rZS13aWR0aD0iMS41Ii8+CjxwYXRoIGQ9Ik0xNS43NSAxMkg4LjI1IiBzdHJva2U9IiMwRjVCOTkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTEyIDguMjVMMTIgMTUuNzUiIHN0cm9rZT0iIzBGNUI5OSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K') !important;
+
+    background-repeat: no-repeat;
+}
+
+
+.selected.last_selected .user-def-button_upload_file {
+    border: none;
+    color: white;
+    cursor: pointer;
+    line-height: 19px;
+    text-align: center;
+    font-size: 16px;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    /* margin: 4px 5px;*/
+    position: relative;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 6px;
+    background-position: center center;
+    /* background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC43NSIgeT0iMC43NSIgd2lkdGg9IjIyLjUiIGhlaWdodD0iMjIuNSIgcng9IjExLjI1IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CjxwYXRoIGQ9Ik0xNS43NSAxMkg4LjI1IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTEyIDguMjVMMTIgMTUuNzUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K') !important; */
+    background-repeat: no-repeat;
+}
+
+
+
+.vcm-theme-halva .vcm-runtime .widget-ext-grid:not(.user-def-files-table) .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr td .cell-border {
+    background: none !important;
+    border: none !important;
+}
+
+.user-def-files-table {
+    /* min-height: 113px !important; */
+}
+
+
+tr.user-def-file-table-parent:first-child .cell-border-top {
+    height: 0px !important;
+}
+
+
+
+tr.user-def-file-table-parent:first-child::before {
+    border-top: none !important;
+}
+
+
+.user-def-file-table-parent {
+    padding-top: 0px !important;
+
+}
+
+
+
+.user-def-file-table-child .cell-inner.content-tt-cell,
+.user-def-file-table-parent .cell-inner.content-tt-cell,
+.user-def-file-table-child .cell-border .user-def-file-table-parent .cell-border {
+    padding: 0 0 !important;
+}
+
+.user-def-file-table-child .cell-inner.content-tt-cell {
+    min-height: auto !important;
+}
+
+.user-def-file-table .user-def-file-table-child .firstCell {
+    padding-left: 0px !important;
+}
+
+.user-def-files-table .jq_default__grid .ui-table.hierarchy tr.hasChilds td.firstCell:before {
+    content: '' !important;
+    display: none !important;
+    pointer-events: none !important;
+}
+
+.user-def-files-table .jq_default__grid .ui-table.hierarchy tr.hasChilds td.firstCell {
+    pointer-events: none !important;
+}
+
+.user-def-podpis_iniz_block .vcm-widget-wrapper.jq_text.jq-style-default.runtime {
+    padding: 4px 0px;
+}
+
+.user-def-podpis_iniz_block .fields-wrapper.input-border {
+    margin: 0 !important;
+}
+
+.user-def-podpis_iniz_block .label {
+    margin-left: 0 !important;
+}
+
+.user-def-podpis_iniz_block .row {
+    margin-left: 0 !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr.user-def-file-table-child {
+    padding-bottom: 0 !important;
+}
+
+
+
+tr.user-def-file-table-parent .cell-border-top {
+    /* border-top: 1px solid #E3E8ED; */
+    height: 26px !important;
+}
+
+tr.user-def-file-table-parent::before {
+    content: '';
+    width: 98%;
+    position: absolute;
+    border-top: 1px solid #E3E8ED;
+    z-index: 100;
+    margin-left: 20px !important;
+}
+
+.user-def-file-table .cell-border {
+    height: auto !important;
+}
+
+/* .vcm-theme-beauty .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-top,
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-bottom,
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-top,
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-bottom {
+  position: static !important;
+} */
+
+.user-def-files-table .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-top,
+.user-def-files-table .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-bottom,
+.user-def-files-table .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-top,
+.user-def-files-table .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-bottom {
+    position: static !important;
+}
+
+.user-def-file-table-parent .cell-inner.content-tt-cell:has(.user-def-button_upload_file),
+.user-def-file-table-parent .cell-inner.content-tt-cell:has(.user-def-button_show_file_versions),
+.user-def-file-table-child .cell-inner.content-tt-cell:has(.user-def-button_show_file_versions) {
+    text-align: right !important;
+}
+
+.user-def-button_show_file_versions {
+    border: none;
+    color: white;
+    cursor: pointer;
+    line-height: 19px;
+    text-align: center;
+    font-size: 16px;
+    min-width: 24px;     /*0306  было 30*/
+    min-height: 24px;    /*0306 было 30*/
+    /* margin: 4px 5px;*/
+    right: 5px !important;
+    position: relative;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 6px;
+    background-position: center center;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nGNgGAXUAPa+yzxs/ZY/tvNf/h8v9lv2CKSWJEMZGBgYQBoJGo5kCVEWwAxlALGhmgnqIaQOxdVIiu2oZQEuV9tRzQIchtqNWgADo0FkNwJSkR+NM5q97zIPWGFFEwtoXtjh9I0fDYprbJbZUbPCGQUMUAAAr5RYO2S1GXEAAAAASUVORK5CYII=') !important;
+    background-repeat: no-repeat;
+}
+
+/*.selected.last_selected .user-def-button_show_file_versions {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgc3R5bGU9InNoYXBlLXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IHRleHQtcmVuZGVyaW5nOmdlb21ldHJpY1ByZWNpc2lvbjsgaW1hZ2UtcmVuZGVyaW5nOm9wdGltaXplUXVhbGl0eTsgZmlsbC1ydWxlOmV2ZW5vZGQ7IGNsaXAtcnVsZTpldmVub2RkIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CjxnPjxwYXRoIHN0eWxlPSJvcGFjaXR5OjAuOTkxIiBmaWxsPSIjRkZGRkZGIiBkPSJNIDguNSwyLjUgQyAxMi41LDIuNSAxNi41LDIuNSAyMC41LDIuNUMgMjAuNSw4LjUgMjAuNSwxNC41IDIwLjUsMjAuNUMgMTYuNSwyMC41IDEyLjUsMjAuNSA4LjUsMjAuNUMgOC41LDE0LjUgOC41LDguNSA4LjUsMi41IFogTSAxMC41LDQuNSBDIDEzLjE2NjcsNC41IDE1LjgzMzMsNC41IDE4LjUsNC41QyAxOC41LDkuMTY2NjcgMTguNSwxMy44MzMzIDE4LjUsMTguNUMgMTUuODMzMywxOC41IDEzLjE2NjcsMTguNSAxMC41LDE4LjVDIDEwLjUsMTMuODMzMyAxMC41LDkuMTY2NjcgMTAuNSw0LjUgWiIvPjwvZz4KPGc+PHBhdGggc3R5bGU9Im9wYWNpdHk6MC45ODUiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0gNS41LDMuNSBDIDYuODExNjYsNS43NDMxNyA3LjQ3ODMyLDguNDA5ODQgNy41LDExLjVDIDcuMTY2NjcsMTQuMTY2NyA2LjgzMzMzLDE2LjgzMzMgNi41LDE5LjVDIDUuNTA1MTUsMTQuMjA3OSA1LjE3MTgyLDguODc0NiA1LjUsMy41IFoiLz48L2c+CjxnPjxwYXRoIHN0eWxlPSJvcGFjaXR5OjAuOTgiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0gMi41LDUuNSBDIDMuNzk0MjYsNy4wNDc3NSA0LjQ2MDkzLDkuMDQ3NzUgNC41LDExLjVDIDQuMTY2NjcsMTMuNSAzLjgzMzMzLDE1LjUgMy41LDE3LjVDIDIuNTA5MDksMTMuNTU0NiAyLjE3NTc1LDkuNTU0NjEgMi41LDUuNSBaIi8+PC9nPgo8L3N2Zz4K") !important;
+}*/
+
+.user-def-file-table td:has(.user-def-button_show_file_versions)
+
+/* ,.user-def-file-table td:has(.user-def-button_upload_file) */
+{
+    /*margin-left: 95% !important;*/
+}
+
+/* Уберает сдвиг top row при ввыделении строки таблицы документов */
+/* .user-def-files-table .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-top, .vcm-theme-beauty .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-bottom, .vcm-theme-beauty .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-top, .vcm-theme-beauty .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-bottom { */
+/* height: 0px !important; */
+/* } */
+
+/* ФАЙЛЫ НОВОЕ 29.05.2025 laninia */
+.user-def-file-table tr.user-def-file-table-parent {
+    padding-top: 20px !important;  /* 30.06  раньше было 24*/
+}
+.user-def-file-table tr.user-def-file-table-parent:first-child {
+    padding-top: 0px !important;
+}
+
+
+.user-def-file-table tr.user-def-file-table-parent  td span {
+    height: auto !important;
+    display: inline-block;
+    /* background-color: red !important; */
+}
+
+.user-def-file-table tr.user-def-file-table-child td .content-tt-cell {
+    height: auto !important;
+}
+.user-def-file-table tr.user-def-file-table-child td span {
+    height: 36px !important;
+    display: inline-block;
+    line-height: 36px;
+    /* background-color: #13ffbf !important; */
+}
+.user-def-file-table .jq_default__grid .ui-table tbody tr.user-def-file-table-child td.firstCell {
+     height: 36px !important;
+}
+
+
+.user-def-file-table tr.user-def-file-table-parent td .cell-inner.content-tt-cell {
+    min-height: 24px !important;  
+	max-height: 24px !important;  
+    /* background-color: yellow !important; */
+}
+
+.user-def-file-table tr td .cell-border {
+    height: auto !important;
+    padding: 0 !important;
+    /* background-color: green !important; */
+}
+
+.user-def-files-table .jq_default__grid .ui-table-wrapper .ui-table tbody tr td .cell-border-top{
+    height: 20px !important;
+    height: 0px !important;
+    /* background-color: blue !important; */
+}
+.user-def-files-table .jq_default__grid .ui-table-wrapper .ui-table tbody tr.user-def-file-table-parent td .cell-border-top{
+    height: 20px !important;   /* 30.06  раньше было 24*/
+    /* background-color: #5b5b92 !important; */
+}
+
+.user-def-file-table-child {
+    padding-top: 15px !important;
+    padding: 0px 8px !important;
+    margin-left: 12px;
+    height: 36px !important;
+    /* margin-bottom: 24px !important; */
+    margin-top: 12px !important;
+}
+
+.user-def-min_h_0,
+.user-def-files-table.user-def-min_h_0  {
+    min-height: 0 !important;
+}
+
+element.group:has(.user-def-spisok_rassilki) {
+    padding-bottom: 0px !important;
+}
