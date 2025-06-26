@@ -148,3 +148,22 @@ ul.jquery-tree:has(.user-def-catalog-new) {
 }
 
 /* КАТАЛОГИ */
+
+
+/* Настройка таблицы, группа кнопок */
+.user-def-setting_table .ui-widget.buttonset.center.runtime.boxes_wrapper.horizontal {
+    border: 1px solid blue;
+    border-radius: 8px;
+}
+
+.user-def-setting_table .image {
+    display: flex;
+    display: flex !important;
+    margin: 2px 0px;
+    height: auto !important;
+    width: auto !important;
+}
+
+.user-def-setting_table .graphbutton {
+    margin: 4px 7px !important;
+}
