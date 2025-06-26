@@ -2793,7 +2793,7 @@ element.style {
 .vcm-theme-halva .vcm-runtime .widget-ext-htabs:not(.user-def-main-tabs) .tab-body,
 .vcm-theme-halva .vcm-runtime .widget-selector-htab:not(.user-def-main-tabs) .tab-body {
   border: none !important;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-ext-htabs .vcm-lock,
