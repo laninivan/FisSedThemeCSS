@@ -565,6 +565,9 @@
 .user-def-flex_auto {
     flex: auto !important;
 }
+.user-def-flex_none {
+    flex: none !important;
+}
 
 .user-def-udalen-span .jq_text {
     padding: 4px 0px 0px 0px !important;
