@@ -151,9 +151,15 @@ ul.jquery-tree:has(.user-def-catalog-new) {
 
 
 /* Настройка таблицы, группа кнопок */
-.user-def-setting_table .ui-widget.buttonset.center.runtime.boxes_wrapper.horizontal {
-    border: 1px solid blue;
+.user-def-setting_table .graphbutton::before  {
+    content: '';
+    position: absolute;
+    width: 28px !important;
+    height: 28px !important;
+    top: 3px !important;
+    border: 1px solid #0F5B99;
     border-radius: 8px;
+    pointer-events:none;
 }
 
 .user-def-setting_table .image {
