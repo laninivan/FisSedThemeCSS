@@ -826,3 +826,12 @@
   height: 100%;
   padding: 8px !important;
 }
+
+.user-def-pril_btn_add .button.ui-button.ui-widget.ui-button-icon-left.main,
+.user-def-pril_btn_change .button.ui-button.ui-widget.ui-button-icon-left.main,
+.user-def-pril_btn_refresh  .button.ui-button.ui-widget.ui-button-icon-left.main{
+    display: flex !important;
+    flex-direction: row;
+    gap: 8px;
+    padding-left: 20px !important;
+}
