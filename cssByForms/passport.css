@@ -845,3 +845,10 @@
 .user-def-app_table .ui-table-wrapper {
   overflow: auto !important;
 }
+
+/* Рамка таблицы приложений */
+.user-def-app_table {
+  border: 1px solid #E3E8ED;
+  border-left: none !important;
+  border-right: none !important;
+}
