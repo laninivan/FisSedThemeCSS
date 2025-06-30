@@ -160,7 +160,6 @@ ul.jquery-tree:has(.user-def-catalog-new) {
     border: 1px solid #0F5B99;
     border-radius: 8px;
     pointer-events:none;
-    /* background-color: red; */
 }
 
 .user-def-setting_table .image {
@@ -173,6 +172,4 @@ ul.jquery-tree:has(.user-def-catalog-new) {
 
 .user-def-setting_table .graphbutton {
     margin: 4px 7px !important;
-    background-color: #ffffff !important;
-    width: 28px !important;
 }

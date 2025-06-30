@@ -835,3 +835,12 @@
     gap: 8px;
     padding-left: 20px !important;
 }
+
+/* Приложения */
+.user-def-pril_app_missing * {
+  background: transparent !important;
+}
+.user-def-pril_app_missing span {
+  text-align: center;
+  color: gray !important;
+}
