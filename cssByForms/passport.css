@@ -852,3 +852,8 @@
   border-left: none !important;
   border-right: none !important;
 }
+
+/* Убираем пространства неотображаемого скроллбара в заголовке  */
+.user-def-app_table .jq_default__grid .ui-table-header-scroll-space-scroll {
+  overflow: auto !important;
+}
