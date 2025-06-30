@@ -108,10 +108,6 @@
     padding-right: 4px !important;
 }
 
-[data-task-name="Паспорт"] [data-control-name="Контейнер_с_вкладками_1"] {
-    padding-right: 4px;
-}
-
 [data-control-name="abs_Просмотр_паспорта_1"] [data-control-name="Контейнер_с_вкладками_1"] {
     padding-right: 4px;
 }
@@ -744,6 +740,7 @@
 .user-def-pasport_gray_bg {
   padding-top: 24px !important;
   background-color: #F7F7FA !important;
+  /* padding-left: 4px; */
 }
 
 
