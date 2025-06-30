@@ -839,6 +839,7 @@
 /* Приложения */
 .user-def-pril_app_missing * {
   background: transparent !important;
+  margin-top: 80px !important;
 }
 .user-def-pril_app_missing span {
   text-align: center;
