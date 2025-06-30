@@ -842,3 +842,6 @@
   text-align: center;
   color: gray !important;
 }
+.user-def-app_table .ui-table-wrapper {
+  overflow: auto !important;
+}
