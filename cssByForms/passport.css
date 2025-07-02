@@ -932,3 +932,8 @@ position:absolute;
      border-bottom: 1px solid #E3E8ED;
     border-top: 1px solid #E3E8ED;
      padding-left: 11px;
+}
+
+.user-def-sort_block td {
+  padding-top: 11px !important;
+}
