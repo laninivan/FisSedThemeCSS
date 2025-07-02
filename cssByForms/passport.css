@@ -875,8 +875,8 @@
 
 /*  Разрыв связей - заголовок*/
 .user-def-link_delete_title {
-margin-left: 100px;
-  position: relative;
+  padding-left: 24px;position: relative;
+  margin-bottom: 11px;
 }
 .user-def-link_delete_title span {
   font-size:16px !important;
@@ -897,9 +897,19 @@ position:absolute;
 .user-def-group-cancel_ok {
   justify-content: end;
   padding-right: 19px !important;
-  gap:6px !important;
- 
+  gap:6px !important; 
 }
 .user-def-group-cancel_ok .button.ui-button {
    height: 38px !important;
+}
+
+.user-def-inf_about_gap {
+  padding-left: 19px !important;
+  border-top: 1px solid #E3E8ED;
+  padding-top: 11px;
+}
+
+.user-def-checkbox_conf_gap {
+  border-bottom: 1px solid #E3E8ED;
+  padding-left: 24px !important;
 }
