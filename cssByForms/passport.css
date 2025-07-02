@@ -912,4 +912,18 @@ position:absolute;
 .user-def-checkbox_conf_gap {
   border-bottom: 1px solid #E3E8ED;
   padding-left: 24px !important;
+  padding-top: 8px !important;
+}
+
+.user-def-table-sort-info .ui-dialog-title {
+  color: #1A1A1C !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important
+}
+
+.user-def-table-sort-info .ui-dialog-titlebar {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  padding-left: 24px !important;
 }
