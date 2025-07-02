@@ -924,6 +924,11 @@ position:absolute;
 
 .user-def-table-sort-info .ui-dialog-titlebar {
   padding-top: 18px !important;
-  padding-bottom: 18px !important;
+  margin-bottom: 18px !important;
   padding-left: 24px !important;
+}
+
+.user-def-sort_block {
+     border-bottom: 1px solid #E3E8ED;
+    border-top: 1px solid #E3E8ED;
 }
