@@ -834,11 +834,13 @@
 }
 
 /* Приложения */
-.user-def-pril_app_missing * {
+.user-def-pril_app_missing span {
   background: transparent !important;
   margin-top: 80px !important;
+  padding-left:20px;
 }
-.user-def-pril_app_missing span {
+
+.user-def-pril_app_missing * {
   text-align: center;
   color: gray !important;
 }
@@ -856,4 +858,48 @@
 /* Убираем пространства неотображаемого скроллбара в заголовке  */
 .user-def-app_table .jq_default__grid .ui-table-header-scroll-space-scroll {
   overflow: auto !important;
+}
+
+/* Редизайн пагинации */
+.user-def-app_table span.ui-btn.paginator-control.paginator-control-next,
+.user-def-app_table span.ui-btn.paginator-control.paginator-control-prev,
+.user-def-app_table span.ui-btn.paginator-control.paginator-control-active {
+    margin: 3px !important;
+}
+.user-def-app_table span.ui-btn.paginator-control.paginator-control-next {
+  margin-right: 24px !important;
+}
+.user-def-app_table .paginator-results {
+  padding-right: 37px !important;
+}
+
+/*  Разрыв связей - заголовок*/
+.user-def-link_delete_title {
+margin-left: 100px;
+  position: relative;
+}
+.user-def-link_delete_title span {
+  font-size:16px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  padding-left: 26px !important;
+}
+.user-def-link_delete_title:before {
+  content: '';
+position:absolute;
+  width:24px;
+  height: 24px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjc2MjQgMTMuOTJMMTQuMzYyNCAyLjRDMTMuNTAyNCAwLjg1IDEyLjMxMjQgMCAxMS4wMDI0IDBDOS42OTI0MiAwIDguNTAyNDIgMC44NSA3LjY0MjQyIDIuNEwxLjI0MjQyIDEzLjkyQzAuNDMyNDE5IDE1LjM5IDAuMzQyNDE5IDE2LjggMC45OTI0MTkgMTcuOTFDMS42NDI0MiAxOS4wMiAyLjkyMjQyIDE5LjYzIDQuNjAyNDIgMTkuNjNIMTcuNDAyNEMxOS4wODI0IDE5LjYzIDIwLjM2MjQgMTkuMDIgMjEuMDEyNCAxNy45MUMyMS42NjI0IDE2LjggMjEuNTcyNCAxNS4zOCAyMC43NjI0IDEzLjkyWk0xMC4yNTI0IDdDMTAuMjUyNCA2LjU5IDEwLjU5MjQgNi4yNSAxMS4wMDI0IDYuMjVDMTEuNDEyNCA2LjI1IDExLjc1MjQgNi41OSAxMS43NTI0IDdWMTJDMTEuNzUyNCAxMi40MSAxMS40MTI0IDEyLjc1IDExLjAwMjQgMTIuNzVDMTAuNTkyNCAxMi43NSAxMC4yNTI0IDEyLjQxIDEwLjI1MjQgMTJWN1pNMTEuNzEyNCAxNS43MUMxMS42NjI0IDE1Ljc1IDExLjYxMjQgMTUuNzkgMTEuNTYyNCAxNS44M0MxMS41MDI0IDE1Ljg3IDExLjQ0MjQgMTUuOSAxMS4zODI0IDE1LjkyQzExLjMyMjQgMTUuOTUgMTEuMjYyNCAxNS45NyAxMS4xOTI0IDE1Ljk4QzExLjEzMjQgMTUuOTkgMTEuMDYyNCAxNiAxMS4wMDI0IDE2QzEwLjk0MjQgMTYgMTAuODcyNCAxNS45OSAxMC44MDI0IDE1Ljk4QzEwLjc0MjQgMTUuOTcgMTAuNjgyNCAxNS45NSAxMC42MjI0IDE1LjkyQzEwLjU2MjQgMTUuOSAxMC41MDI0IDE1Ljg3IDEwLjQ0MjQgMTUuODNDMTAuMzkyNCAxNS43OSAxMC4zNDI0IDE1Ljc1IDEwLjI5MjQgMTUuNzFDMTAuMTEyNCAxNS41MiAxMC4wMDI0IDE1LjI2IDEwLjAwMjQgMTVDMTAuMDAyNCAxNC43NCAxMC4xMTI0IDE0LjQ4IDEwLjI5MjQgMTQuMjlDMTAuMzQyNCAxNC4yNSAxMC4zOTI0IDE0LjIxIDEwLjQ0MjQgMTQuMTdDMTAuNTAyNCAxNC4xMyAxMC41NjI0IDE0LjEgMTAuNjIyNCAxNC4wOEMxMC42ODI0IDE0LjA1IDEwLjc0MjQgMTQuMDMgMTAuODAyNCAxNC4wMkMxMC45MzI0IDEzLjk5IDExLjA3MjQgMTMuOTkgMTEuMTkyNCAxNC4wMkMxMS4yNjI0IDE0LjAzIDExLjMyMjQgMTQuMDUgMTEuMzgyNCAxNC4wOEMxMS40NDI0IDE0LjEgMTEuNTAyNCAxNC4xMyAxMS41NjI0IDE0LjE3QzExLjYxMjQgMTQuMjEgMTEuNjYyNCAxNC4yNSAxMS43MTI0IDE0LjI5QzExLjg5MjQgMTQuNDggMTIuMDAyNCAxNC43NCAxMi4wMDI0IDE1QzEyLjAwMjQgMTUuMjYgMTEuODkyNCAxNS41MiAxMS43MTI0IDE1LjcxWiIgZmlsbD0iI0YwOUEzNyIvPgo8L3N2Zz4K);
+  background-repeat: no-repeat;
+  top: 4px;
+}
+
+.user-def-group-cancel_ok {
+  justify-content: end;
+  padding-right: 19px !important;
+  gap:6px !important;
+ 
+}
+.user-def-group-cancel_ok .button.ui-button {
+   height: 38px !important;
 }
