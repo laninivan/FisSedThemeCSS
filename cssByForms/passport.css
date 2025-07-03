@@ -937,3 +937,33 @@ position:absolute;
 .user-def-sort_block td {
   padding-top: 11px !important;
 }
+
+
+/* Крестик и расширялка в блоки сортировки */
+.user-def-table-sort-info .ui-dialog-titlebar-maximizable:before {
+  content: '' !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjE0MjkgMS44NTcxNEwxLjg1NzE0IDEyLjE0MjlNMSA3Ljg1NzE0TDEgMTIuMDkwOUMxIDEyLjU5MyAxLjQwNzA0IDEzIDEuOTA5MTQgMTNINi4xNDI4Nk03Ljg1NzE0IDFMMTIuMDkwOSAxQzEyLjU5MyAxIDEzIDEuNDA3MDMgMTMgMS45MDkxNFY2LjE0Mjg2IiBzdHJva2U9IiMxQTFBMUMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==) !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-repeat: no-repeat;
+  transform: rotate(0) !important;
+  position:absolute !important;
+  background-repeat: no-repeat !important;
+}
+
+.user-def-table-sort-info .ui-dialog-titlebar-close:after {
+  background: none !important;
+}
+.user-def-table-sort-info .ui-dialog-titlebar-close:before
+
+ {
+  content: '' !important;
+ background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjM5NTcgMS44MTI4NkMxMS43Mjk1IDEuNDc5MTIgMTEuNzI5NSAwLjkzODAyNCAxMS4zOTU3IDAuNjA0Mjg2QzExLjA2MiAwLjI3MDU0OCAxMC41MjA5IDAuMjcwNTQ4IDEwLjE4NzEgMC42MDQyODZMNiA0Ljc5MTQzTDEuODEyODYgMC42MDQyODZDMS40NzkxMiAwLjI3MDU0OCAwLjkzODAyNCAwLjI3MDU0OCAwLjYwNDI4NiAwLjYwNDI4NkMwLjI3MDU0OCAwLjkzODAyNCAwLjI3MDU0OCAxLjQ3OTEyIDAuNjA0Mjg2IDEuODEyODZMNC43OTE0MyA2TDAuNjA0Mjg2IDEwLjE4NzFDMC4yNzA1NDggMTAuNTIwOSAwLjI3MDU0OCAxMS4wNjIgMC42MDQyODYgMTEuMzk1N0MwLjkzODAyNCAxMS43Mjk1IDEuNDc5MTIgMTEuNzI5NSAxLjgxMjg2IDExLjM5NTdMNiA3LjIwODU3TDEwLjE4NzEgMTEuMzk1N0MxMC41MjA5IDExLjcyOTUgMTEuMDYyIDExLjcyOTUgMTEuMzk1NyAxMS4zOTU3QzExLjcyOTUgMTEuMDYyIDExLjcyOTUgMTAuNTIwOSAxMS4zOTU3IDEwLjE4NzFMNy4yMDg1NyA2TDExLjM5NTcgMS44MTI4NloiIGZpbGw9IiMxQTFBMUMiLz4KPC9zdmc+Cg==) !important;
+    width: 12px !important;
+   height: 12px !important;
+   background-color: transparent;
+   transform: rotate(45deg) !important;
+   position: absolute;
+}
+
+
