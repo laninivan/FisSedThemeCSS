@@ -2966,7 +2966,7 @@ element.style {
   height: 9px !important;
   width: 13px !important;
   display: block;
-  transform: rotate(135deg);
+  /* transform: rotate(135deg); */
   border: none !important;
   background: transparent;
   position: absolute;
@@ -2987,7 +2987,7 @@ element.style {
   left: 0px;
   top: 7px;
   /* transform: rotate(45deg); */
-  /* -webkit-transform: rotate(45deg); */
+  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -3011,16 +3011,16 @@ element.style {
   display: flex;
   position: relative;
   background-color: transparent !important;
-  background-image: none !important;
-  background-position: 0 0 !important;
-  width: 13px !important;
-  height: 13px;
-  margin: 0;
-  right: 7px !important;
-  border: none !important;
-  cursor: pointer;
-  z-index: auto;
-  top: 3px;
+  /* background-image: none !important; */
+  /* background-position: 0 0 !important; */
+  /* width: 13px !important; */
+  /* height: 13px; */
+  /* margin: 0; */
+  /* right: 7px !important; */
+  /* border: none !important; */
+  /* cursor: pointer; */
+  /* z-index: auto; */
+  /* top: 3px; */
 }
 
 .ui-dialog .dialog_title .dialog_title_inner,
@@ -4295,7 +4295,7 @@ favorite {
 
 /* Иконки кнопок направления сортировки в шапках таблиц. Чтоб легче нажималось НАЧАЛО */
 .vcm-theme-halva .vcm-runtime .widget-ext-grid .ui-columns-table .ui-table-header .ui-table-header-content td .ui-arrow .inline-inner div.ui-arrow-up:after {
-  content: '';
+  /* content: ''; */
   position: absolute;
   width: 20px;
   height: 20px;
