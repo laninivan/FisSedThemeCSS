@@ -298,7 +298,7 @@
   margin-top: 10px;
 } */
 
-.vcm-theme-halva .vcm-runtime .widget .field_container .top[style*="display:none"] {
+.vcm-theme-halva .vcm-runtime not:(.user-def-update_order_repeater) .widget .field_container .top[style*="display:none"] { 
   /*01.042025 +not  :not(.user-def-otvetst-head) */
   display: block !important;
   height: 20px !important;
@@ -938,11 +938,13 @@ position:absolute;
   padding-top: 11px !important;
 }
 
-.user-def-table-sort-info .ui-dialog-titlebar-maximizable:before {
+/* .user-def-table-sort-info .ui-dialog-titlebar-maximizable:before { */
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all .ui-dialog-titlebar-maximizable:before {
   content: '' !important;
 }
 /* Крестик и расширялка в блоки сортировки */
-.user-def-table-sort-info .ui-dialog-titlebar-maximizable {
+/* .user-def-table-sort-info .ui-dialog-titlebar-maximizable { */
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all .ui-dialog-titlebar-maximizable {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjE0MjkgMS44NTcxNEwxLjg1NzE0IDEyLjE0MjlNMSA3Ljg1NzE0TDEgMTIuMDkwOUMxIDEyLjU5MyAxLjQwNzA0IDEzIDEuOTA5MTQgMTNINi4xNDI4Nk03Ljg1NzE0IDFMMTIuMDkwOSAxQzEyLjU5MyAxIDEzIDEuNDA3MDMgMTMgMS45MDkxNFY2LjE0Mjg2IiBzdHJva2U9IiMxQTFBMUMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==) !important;
   width: 12px !important;
   height: 12px !important;
@@ -950,13 +952,14 @@ position:absolute;
   background-size: cover;
 }
 
-.user-def-table-sort-info .ui-dialog-titlebar-close:after,
-.user-def-table-sort-info .ui-dialog-titlebar-close:before{
+/* .user-def-table-sort-info .ui-dialog-titlebar-close:after,
+.user-def-table-sort-info .ui-dialog-titlebar-close:before{ */
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all .ui-dialog-titlebar-close:after,
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all .ui-dialog-titlebar-close:before{
   background: none !important;
 }
-.user-def-table-sort-info .ui-dialog-titlebar-close
-
- {
+/* .user-def-table-sort-info .ui-dialog-titlebar-close { */
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all .ui-dialog-titlebar-close {
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjM5NTcgMS44MTI4NkMxMS43Mjk1IDEuNDc5MTIgMTEuNzI5NSAwLjkzODAyNCAxMS4zOTU3IDAuNjA0Mjg2QzExLjA2MiAwLjI3MDU0OCAxMC41MjA5IDAuMjcwNTQ4IDEwLjE4NzEgMC42MDQyODZMNiA0Ljc5MTQzTDEuODEyODYgMC42MDQyODZDMS40NzkxMiAwLjI3MDU0OCAwLjkzODAyNCAwLjI3MDU0OCAwLjYwNDI4NiAwLjYwNDI4NkMwLjI3MDU0OCAwLjkzODAyNCAwLjI3MDU0OCAxLjQ3OTEyIDAuNjA0Mjg2IDEuODEyODZMNC43OTE0MyA2TDAuNjA0Mjg2IDEwLjE4NzFDMC4yNzA1NDggMTAuNTIwOSAwLjI3MDU0OCAxMS4wNjIgMC42MDQyODYgMTEuMzk1N0MwLjkzODAyNCAxMS43Mjk1IDEuNDc5MTIgMTEuNzI5NSAxLjgxMjg2IDExLjM5NTdMNiA3LjIwODU3TDEwLjE4NzEgMTEuMzk1N0MxMC41MjA5IDExLjcyOTUgMTEuMDYyIDExLjcyOTUgMTEuMzk1NyAxMS4zOTU3QzExLjcyOTUgMTEuMDYyIDExLjcyOTUgMTAuNTIwOSAxMS4zOTU3IDEwLjE4NzFMNy4yMDg1NyA2TDExLjM5NTcgMS44MTI4NloiIGZpbGw9IiMxQTFBMUMiLz4KPC9zdmc+Cg==) !important;
   width: 12px !important;
   height: 12px !important;
@@ -989,3 +992,67 @@ position:absolute;
   background-color: #0F5B99 !important;
 }
 
+.user-def-app_table .ui-table-mainheader .righthead-controls .checkbox {
+    width: 16px !important;
+  height: 16px !important;
+}
+
+.user-def-app_table .ui-table-mainheader .righthead-controls .checkbox.checked {
+   background-size: 8px 6px !important;
+}
+
+
+
+.user-def-update_order_repeater .element.widget.widget-ext-number .top {
+  display: none !important;
+    height: 0px !important;
+}
+.user-def-update_order_repeater .element.widget.widget-ext-number {
+  min-width: 80px !important;
+}
+.user-def-update_order_repeater .element.widget.widget-ext-number .text_field  {
+  width: 80px !important;
+}
+.user-def-update_order_repeater .cell-4 {
+    flex: none !important;
+}
+
+
+
+.user-def-update_order_repeater  .vcm-widget-wrapper.jq_text.jq-style-default.runtime {
+  padding-top: 0 !important;
+}
+.user-def-update_order_repeater .group.horizontal-group {
+    gap: 24px !important;
+}
+
+.user-def-update_order_buttons {
+    width: 100% !important;
+    justify-content: flex-end !important;
+}
+
+.user-def-update_order_repeater {
+  border-top: 1px solid #E3E8ED !important;
+  border-bottom: 1px solid #E3E8ED !important;
+  padding-top: 14px !important;
+   padding-bottom: 11px !important;
+}
+
+.user-def-update_order_repeater .vcm-widget-wrapper.bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+.vcm-window.ui-dialog-content.ui-widget-content:has(.user-def-update_order_repeater) {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.user-def-update_order_repeater .jq-multypanel-body.tooltip-area.tooltip-anchor {
+    gap: 16px !important;
+}
+
+
+/* Кнопка-крестик для очистки полей */
+.vcm-widget-wrapper.jq_text.jq-style-default.runtime.fixedWidth.top-padding:has(.user-def-button_close) {
+    padding-top: 30px !important;
+}
