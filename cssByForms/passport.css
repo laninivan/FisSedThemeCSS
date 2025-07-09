@@ -1056,3 +1056,50 @@ position:absolute;
 .vcm-widget-wrapper.jq_text.jq-style-default.runtime.fixedWidth.top-padding:has(.user-def-button_close) {
     padding-top: 30px !important;
 }
+.element.widget.widget-text:has(.user-def-button_close) {
+    width: 35px !important;
+    right: 5px !important;
+    top: 25px !important;
+}
+
+.user-def-searh_RegD_buttons {
+  gap: 16px !important;
+  justify-content:flex-start !important;
+  padding-left: 19px !important;
+}
+
+.user-def-add_doc_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-def-add_doc_buttons .button.ui-button.ui-widget {
+  height: 38px !important;
+}
+
+/* Добавление РегД заголовок */
+.user-def-add_doc_header * {
+  color: #1A1A1C !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+.user-def-add_doc_header {
+  border-bottom: 1px #E3E8ED solid;
+}
+.user-def-add_doc_header .jq-header-caption-text{
+  padding-left: 24px !important;
+}
+
+
+.user-def-add_doc_search_panel {
+  padding-top: 16px !important;
+  padding-left: 14px !important;
+}
+
+
+.user-def-app_table .ui-head-cell.ui-table-sortable.with-filter,
+.user-def-app_table  .checkbox-inline-editor.column-lock.with-filter {
+  border-bottom: none !important;
+}
