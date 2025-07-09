@@ -1103,3 +1103,11 @@ position:absolute;
 .user-def-app_table  .checkbox-inline-editor.column-lock.with-filter {
   border-bottom: none !important;
 }
+
+/* Фильтры таблицы добавления ПР в РегД */
+.user-def-app_table input.ui-table-filter-input {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMyAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjUwMDUgMTEuNTAwNUw4LjQ2ODg3IDguNDY4OTNNOC40Njg4NyA4LjQ2ODkzQzkuMjg5MzcgNy42NDg0MyA5Ljc1MDMzIDYuNTM1NTkgOS43NTAzMyA1LjM3NTIzQzkuNzUwMzMgNC4yMTQ4NiA5LjI4OTM3IDMuMTAyMDIgOC40Njg4NyAyLjI4MTUyQzcuNjQ4MzcgMS40NjEwMSA2LjUzNTUzIDEuMDAwMDYgNS4zNzUxNiAxLjAwMDA2QzQuMjE0OCAxLjAwMDA2IDMuMTAxOTYgMS40NjEwMSAyLjI4MTQ2IDIuMjgxNTJDMS40NjA5NSAzLjEwMjAyIDEgNC4yMTQ4NiAxIDUuMzc1MjNDMSA2LjUzNTU5IDEuNDYwOTUgNy42NDg0MyAyLjI4MTQ2IDguNDY4OTNDMy4xMDE5NiA5LjI4OTQ0IDQuMjE0OCA5Ljc1MDM5IDUuMzc1MTYgOS43NTAzOUM2LjUzNTUzIDkuNzUwMzkgNy42NDgzNyA5LjI4OTQ0IDguNDY4ODcgOC40Njg5M1oiIHN0cm9rZT0iI0ExQUZCRiIgc3Ryb2tlLXdpZHRoPSIxLjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K) !important;
+    background-repeat: no-repeat !important;
+    background-size:contain;
+    background-position: 5px 5px !important;
+}
