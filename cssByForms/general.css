@@ -615,3 +615,8 @@
 
 
 /* GENERAL STYLES  */
+
+/* Шрифт у меню выбора дат  */
+.vcm-theme-beauty .pickmeup {
+    font-family: 'Rubik' !important;
+}

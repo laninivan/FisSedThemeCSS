@@ -1105,9 +1105,28 @@ position:absolute;
 }
 
 /* Фильтры таблицы добавления ПР в РегД */
-.user-def-app_table input.ui-table-filter-input {
+.user-def-app_table input.ui-table-filter-input:placeholder-shown {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMyAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjUwMDUgMTEuNTAwNUw4LjQ2ODg3IDguNDY4OTNNOC40Njg4NyA4LjQ2ODkzQzkuMjg5MzcgNy42NDg0MyA5Ljc1MDMzIDYuNTM1NTkgOS43NTAzMyA1LjM3NTIzQzkuNzUwMzMgNC4yMTQ4NiA5LjI4OTM3IDMuMTAyMDIgOC40Njg4NyAyLjI4MTUyQzcuNjQ4MzcgMS40NjEwMSA2LjUzNTUzIDEuMDAwMDYgNS4zNzUxNiAxLjAwMDA2QzQuMjE0OCAxLjAwMDA2IDMuMTAxOTYgMS40NjEwMSAyLjI4MTQ2IDIuMjgxNTJDMS40NjA5NSAzLjEwMjAyIDEgNC4yMTQ4NiAxIDUuMzc1MjNDMSA2LjUzNTU5IDEuNDYwOTUgNy42NDg0MyAyLjI4MTQ2IDguNDY4OTNDMy4xMDE5NiA5LjI4OTQ0IDQuMjE0OCA5Ljc1MDM5IDUuMzc1MTYgOS43NTAzOUM2LjUzNTUzIDkuNzUwMzkgNy42NDgzNyA5LjI4OTQ0IDguNDY4ODcgOC40Njg5M1oiIHN0cm9rZT0iI0ExQUZCRiIgc3Ryb2tlLXdpZHRoPSIxLjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K) !important;
     background-repeat: no-repeat !important;
     background-size:contain;
     background-position: 5px 5px !important;
+}
+
+
+/*Убираем скругление, чтобы не отображался уголок у развернутого модального окна  */
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.tooltip-area.tooltip-anchor {
+    border-radius: 0 !important;
+}
+
+/* отменяемые, уведомление  */
+.user-def-otm_prikaz_notication * {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+}
+
+.user-def-otm_prikaz_notication .jq_text_wrapper.txtstyle-italic{
+  padding-left: 28px !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExMTQ2XzE0MTQ1KSI+CjxjaXJjbGUgY3g9IjkuOTk5NzIiIGN5PSI5Ljk5OTk4IiByPSI4LjMzMzMzIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNMTAgMTQuMTY2NlY5LjE2NjY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxjaXJjbGUgY3g9IjAuODMzMzMzIiBjeT0iMC44MzMzMzMiIHI9IjAuODMzMzMzIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSA5LjE2NjM4IDcuNSkiIGZpbGw9IndoaXRlIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMTExNDZfMTQxNDUiPgo8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==)  !important;
+  background-repeat: no-repeat !important;
 }
