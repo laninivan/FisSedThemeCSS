@@ -4953,12 +4953,13 @@ tr.user-def-file-table-parent.hasChilds {
   color: white !important;
 }*/
 
-.vcm-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
-  /* background-color: #5e8cb3 !important; */
+m-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
+  background-color: #ffffff !important;
   border: 1px solid #5e8cb3 !important;
   transition: 0.3;
-  color: white !important;
+  color: rgba(142, 178, 210, 1) !important;
 }
+
 
 
 
