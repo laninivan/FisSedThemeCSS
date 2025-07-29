@@ -824,14 +824,7 @@
   padding: 8px !important;
 }
 
-.user-def-pril_btn_add .button.ui-button.ui-widget.ui-button-icon-left.main,
-.user-def-pril_btn_change .button.ui-button.ui-widget.ui-button-icon-left.main,
-.user-def-pril_btn_refresh  .button.ui-button.ui-widget.ui-button-icon-left.main{
-    display: flex !important;
-    flex-direction: row;
-    gap: 8px;
-    padding-left: 20px !important;
-}
+
 
 /* Приложения */
 .user-def-pril_app_missing span {
@@ -857,7 +850,8 @@
 
 /* Убираем пространства неотображаемого скроллбара в заголовке  */
 .user-def-app_table .jq_default__grid .ui-table-header-scroll-space-scroll {
-  overflow: auto !important;
+  /* overflow: auto !important; */
+  /* закомменчено, так как свигает ячейки */
 }
 
 /* Редизайн пагинации */
@@ -896,11 +890,22 @@ position:absolute;
 
 .user-def-group-cancel_ok {
   justify-content: end;
-  padding-right: 19px !important;
-  gap:6px !important; 
+  padding-right: 24px !important;
+  gap: 16px !important;
 }
 .user-def-group-cancel_ok .button.ui-button {
    height: 38px !important;
+}
+.user-def-group-cancel_ok .widget-ext-button:nth-child(2) .button.ui-button.ui-widget.main:not(.ui-state-disabled) {
+    background-color: #0F5B99 !important;
+    color: white !important;
+}
+.user-def-group-cancel_ok .button.ui-button.ui-widget.supporting {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.user-def-group-cancel_ok .button.ui-button.ui-widget {
+    margin: 0px !important;
 }
 
 .user-def-inf_about_gap {
@@ -1055,7 +1060,9 @@ position:absolute;
 /* Кнопка-крестик для очистки полей */
 .vcm-widget-wrapper.jq_text.jq-style-default.runtime.fixedWidth.top-padding:has(.user-def-button_close) {
     padding-top: 30px !important;
+	margin-left: 5px;
 }
+
 .element.widget.widget-text:has(.user-def-button_close) {
     width: 35px !important;
     right: 5px !important;
@@ -1063,7 +1070,7 @@ position:absolute;
 }
 
 .user-def-searh_RegD_buttons {
-  gap: 16px !important;
+  /* gap: 16px !important; */
   justify-content:flex-start !important;
   padding-left: 19px !important;
 }
@@ -1096,6 +1103,7 @@ position:absolute;
 .user-def-add_doc_search_panel {
   padding-top: 16px !important;
   padding-left: 14px !important;
+  border-top: 1px #E3E8ED solid; /*27.07*/
 }
 
 
@@ -1113,10 +1121,6 @@ position:absolute;
 }
 
 
-/*Убираем скругление, чтобы не отображался уголок у развернутого модального окна  */
-.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.tooltip-area.tooltip-anchor {
-    border-radius: 0 !important;
-}
 
 /* отменяемые, уведомление  */
 .user-def-otm_prikaz_notication * {
@@ -1129,4 +1133,378 @@ position:absolute;
   padding-left: 28px !important;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExMTQ2XzE0MTQ1KSI+CjxjaXJjbGUgY3g9IjkuOTk5NzIiIGN5PSI5Ljk5OTk4IiByPSI4LjMzMzMzIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNMTAgMTQuMTY2NlY5LjE2NjY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxjaXJjbGUgY3g9IjAuODMzMzMzIiBjeT0iMC44MzMzMzMiIHI9IjAuODMzMzMzIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSA5LjE2NjM4IDcuNSkiIGZpbGw9IndoaXRlIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMTExNDZfMTQxNDUiPgo8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==)  !important;
   background-repeat: no-repeat !important;
+  font-style:normal;
+}
+
+.user-def-otm_prikaz_notication {
+  border-radius: 8px 0px 0px 8px;
+  margin-left: 24px;
+}
+
+.user-def-otm_prikaz_notication .jq_text_wrapper.txtstyle-italic.runtime {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+/* Цвет четных строк в таблице  */
+.user-def-app_table .ui-table tbody tr.ui-table-rows-even td {
+    background-color: #F7F7FA !important;
+}
+
+/* Цвет родительских строк */
+.user-def-app_table .ui-table.hierarchy tr.hasChilds.opened td * span {
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+/* Выравнивание чекбоксов таблицы повертикали */
+.user-def-app_table .checkbox-inline-editor div:has(.checkbox) {
+    margin-top: 9px !important;
+	margin-left: 12px !important;  /*27.07.2025*/
+	margin-right: 12px !important;  /*27.07.2025*/
+}
+
+
+/* Отступ для первой колонки заголовка таблицы */
+.user-def-app_table .ui-head-cell.ui-table-sortable:first-child {
+    padding-left: 12px !important;
+  padding-right: 32px !important;
+}
+
+/* Поднятие модального окна до уровня крестика */
+.vcm-window.ui-dialog-content.ui-widget-content:has(.user-def-link_delete_title) {
+    position: relative !important;
+    top: -30px !important;
+}
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+    z-index: 990099 !important;
+}
+
+/* Обводка и смещение для менюшки тааблицы */
+
+.user-def-child-switcher-no-visible:not(.user-def-table_spr_kd) .drop-down-grid {
+   top: -5px !important;
+}
+.user-def-child-switcher-no-visible .drop-down-grid {
+   
+    right: 20px;
+    border: none;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
+    max-height: 480px !important;
+}
+
+/* Примечание, инпут, плейсхолдер */
+.user-def-primechanie_input textarea.text_field.tooltip-area::placeholder {
+    color: #A1AFBF !important;
+    font-weight: 400;
+}
+.user-def-primechanie_input {
+  background: white;
+  padding-top: 24px !important;
+  padding-right: 4px !important;
+  padding-left: 20px !important;
+  margin-right: 24px;
+  border-radius: 8px !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+							0px 1px 2px 0px rgba(0, 0, 0, 0.05),
+							0px 4px 4px 0px rgba(0, 0, 0, 0.04),
+							0px 8px 5px 0px rgba(0, 0, 0, 0.03),
+							0px 15px 6px 0px rgba(0, 0, 0, 0.01),
+							0px 23px 6px 0px rgba(0, 0, 0, 0);
+}
+
+.user-def-primechanie_input .center.row {
+  margin-right: 0 !important;
+}
+.user-def-primechanie_input .label {
+  color: #747781 !important;
+  font-weight: 400;
+  font-family: 'Rubik', regular !important;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.user-def-primechanie_input .input-wrapper .fields-wrapper.input-border textarea.text_field.tooltip-area {
+  overflow: scroll;
+}
+.user-def-primechanie_input textarea::-webkit-scrollbar {
+  width: 16px !important;
+}
+.user-def-primechanie_input textarea::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+ border-left: 8px solid transparent;
+border-top-left-radius: 12px 4px !important;
+  border-bottom-left-radius: 12px 4px !important;
+  border-top-right-radius: 4px  !important;
+  border-bottom-right-radius: 4px !important;
+}
+  
+.user-def-primechanie_input textarea::-webkit-scrollbar-track {
+  background-color: #ffffff !important;
+}
+
+/* Настройка вертикальных отступов и высоты для кнопок приложения */
+
+.user-def-pril_btn_add .button.ui-button.ui-widget.ui-button-icon-left.main,
+.user-def-pril_btn_change .button.ui-button.ui-widget.ui-button-icon-left.main,
+.user-def-pril_btn_refresh  .button.ui-button.ui-widget.ui-button-icon-left.main{
+    display: flex !important;
+    flex-direction: row;
+    gap: 8px;
+    padding-left: 16px !important;
+    height: 100% !important;
+    border: 1px solid #0F5B99 !important;
+}
+.user-def-pril_btn_add  .button.ui-button.ui-widget.main,
+.user-def-pril_btn_change .button.ui-button.ui-widget.main,
+.user-def-pril_btn_refresh .button.ui-button.ui-widget.main {
+  height: 100% !important;
+}
+
+
+.user-def-pril_btn_add,
+.user-def-pril_btn_refresh,
+.user-def-pril_btn_change {
+  /* было 38, стало 42 -4(маржин) */
+    height: 42px !important;
+    max-height: 100px !important;
+    min-width: 0px !important;
+}
+.user-def-pril_btn_add .field_container,
+.user-def-pril_btn_refresh .field_container,
+.user-def-pril_btn_change .field_container  {
+    height: 100% !important;
+}
+.user-def-pril_btn_add .button.ui-button.ui-widget.ui-button-icon-left.main span.ui-button-text.ui-button-in-line, 
+.user-def-pril_btn_change .button.ui-button.ui-widget.ui-button-icon-left.main span.ui-button-text.ui-button-in-line ,
+.user-def-pril_btn_refresh .button.ui-button.ui-widget.ui-button-icon-left.main span.ui-button-text.ui-button-in-line {
+    color: #0F5B99 !important;
+}
+
+.user-def-app_table .content.content-tt-cell {
+    font-size: 12px !important;
+    line-height: 16px;
+}
+
+
+/* Уменьшение высоты кнопок удаления в таблице */
+span:has(.user-def-button_delete_row) {
+    /* position: absolute; */
+    bottom: 5px;
+    width: 100%;
+    left: 0px;
+    height: 34px !important;
+}
+
+
+
+
+.user-def-app_table .ui-table-wrapper::-webkit-scrollbar {
+  width: 10px !important;
+}
+.user-def-app_table .ui-table-wrapper::-webkit-scrollbar-thumb {
+   background-clip: content-box;
+ border-left: 2px solid transparent;
+border-top-left-radius: 6px 4px !important;
+  border-bottom-left-radius: 6px 4px !important;
+  border-top-right-radius: 4px  !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.user-def-app_table .ui-table-wrapper::-webkit-scrollbar-track{
+  background-color: #ffffff !important;
+  border: 1px solid #E3E8ED;
+}
+
+.user-def-app_table td * {
+  padding: 0px !important;
+}
+.user-def-app_table td span {
+  padding-left: 12px !important; /*27.07*/
+  padding-right: 12px !important; /*27.07*/
+}
+.user-def-app_table .ui-head-cell .content.content-tt-cell {
+    padding-left: 12px !important; /*27.07*/
+    padding-right: 12px !important; /*27.07*/
+}
+
+/*Убираем скругление, чтобы не отображался уголок у развернутого модального окна  */
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.tooltip-area.tooltip-anchor:has(.expanded) {
+    border-radius: 0 !important;
+}
+
+/* Изменение порядка приложений, стрелочки */
+.user-def-update_order_repeater .fields-wrapper .field-wrapper.input-border .jq_default__spinnerUp {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNiA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMy4yNjMyNSAzLjg2OTcxQzMuMjY3IDMuODY0OTEgMy4yNjg1IDMuODU4NTEgMy4yNzIyNSAzLjg1MzcxTDUuODkwMzIgMC43NjgwMjJDNi4wMzY1NiAwLjU5NDQxNyA2LjAzNjU2IDAuMzEyODA5IDUuODkwMzIgMC4xMzkyMDRDNS44ODg4MiAwLjEzNzYwNCA1Ljg4NzMyIDAuMTM2ODA0IDUuODg1ODIgMC4xMzYwMDRDNS44NTMyOCAwLjA5Mzk2NyA1LjgxMjUzIDAuMDYwMDE2NSA1Ljc2NjQyIDAuMDM2NTI1MkM1LjcyMDMxIDAuMDEzMDM0IDUuNjY5OTQgMC4wMDA1Njg1NzEgNS42MTg4NCAwSDAuMzgxOTQ5QzAuMzI5OTEyIDAuMDAwODk2OTk3IDAuMjc4NjkzIDAuMDEzOTcyMiAwLjIzMTkxMyAwLjAzODMwMjJDMC4xODUxMzIgMC4wNjI2MzIyIDAuMTQzOTMgMC4wOTc2MjM2IDAuMTExMjE3IDAuMTQwODA0TDAuMTA5NzE4IDAuMTM5MjA0QzAuMDM4OTQ1MSAwLjIyNjU1NSAwIDAuMzM4MTU2IDAgMC40NTM2MTNDMCAwLjU2OTA2OSAwLjAzODk0NTEgMC42ODA2NzEgMC4xMDk3MTggMC43NjgwMjJMMi43MzM3OSAzLjg2OTcxQzIuNzY2NDUgMy45MTA1NiAyLjgwNzA0IDMuOTQzMzYgMi44NTI3NSAzLjk2NTg2QzIuODk4NDUgMy45ODgzNSAyLjk0ODE4IDQgMi45OTg1MiA0QzMuMDQ4ODUgNCAzLjA5ODU5IDMuOTg4MzUgMy4xNDQyOSAzLjk2NTg2QzMuMTkgMy45NDMzNiAzLjIzMDU4IDMuOTEwNTYgMy4yNjMyNSAzLjg2OTcxWiIgZmlsbD0iI0ExQUZCRiIvPgo8L3N2Zz4K) !important;
+    background-repeat: no-repeat !important;
+    background-size: 6px 4px;
+    background-position: center;
+}
+
+.user-def-update_order_repeater .fields-wrapper .field-wrapper.input-border .jq_default__spinnerDown {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNiA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMy4yNjMyNSAzLjg2OTcxQzMuMjY3IDMuODY0OTEgMy4yNjg1IDMuODU4NTEgMy4yNzIyNSAzLjg1MzcxTDUuODkwMzIgMC43NjgwMjJDNi4wMzY1NiAwLjU5NDQxNyA2LjAzNjU2IDAuMzEyODA5IDUuODkwMzIgMC4xMzkyMDRDNS44ODg4MiAwLjEzNzYwNCA1Ljg4NzMyIDAuMTM2ODA0IDUuODg1ODIgMC4xMzYwMDRDNS44NTMyOCAwLjA5Mzk2NyA1LjgxMjUzIDAuMDYwMDE2NSA1Ljc2NjQyIDAuMDM2NTI1MkM1LjcyMDMxIDAuMDEzMDM0IDUuNjY5OTQgMC4wMDA1Njg1NzEgNS42MTg4NCAwSDAuMzgxOTQ5QzAuMzI5OTEyIDAuMDAwODk2OTk3IDAuMjc4NjkzIDAuMDEzOTcyMiAwLjIzMTkxMyAwLjAzODMwMjJDMC4xODUxMzIgMC4wNjI2MzIyIDAuMTQzOTMgMC4wOTc2MjM2IDAuMTExMjE3IDAuMTQwODA0TDAuMTA5NzE4IDAuMTM5MjA0QzAuMDM4OTQ1MSAwLjIyNjU1NSAwIDAuMzM4MTU2IDAgMC40NTM2MTNDMCAwLjU2OTA2OSAwLjAzODk0NTEgMC42ODA2NzEgMC4xMDk3MTggMC43NjgwMjJMMi43MzM3OSAzLjg2OTcxQzIuNzY2NDUgMy45MTA1NiAyLjgwNzA0IDMuOTQzMzYgMi44NTI3NSAzLjk2NTg2QzIuODk4NDUgMy45ODgzNSAyLjk0ODE4IDQgMi45OTg1MiA0QzMuMDQ4ODUgNCAzLjA5ODU5IDMuOTg4MzUgMy4xNDQyOSAzLjk2NTg2QzMuMTkgMy45NDMzNiAzLjIzMDU4IDMuOTEwNTYgMy4yNjMyNSAzLjg2OTcxWiIgZmlsbD0iI0ExQUZCRiIvPgo8L3N2Zz4K) !important;
+    background-repeat: no-repeat !important;
+    background-size: 6px 4px;
+    background-position: 12px center;
+}
+
+
+/* .ui-dialog.ui-widget.-wuiidget-content.ui-corner-all.ui-front.tooltip-area.tooltip-anchor.header-position-default.header-hide.ui-draggable.dialog-active:has(.expanded) {
+   height: auto !important;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.tooltip-area.tooltip-anchor.header-position-default.header-hide.ui-draggable.dialog-active{
+  height: 263px !important;
+} */
+
+
+/*  Изменение порядка приложений - заголовок*/
+.user-def-upd_app_order_title {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 11px;
+}
+.user-def-upd_app_order_title span {
+  font-size:16px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+}
+.vcm-window.ui-dialog-content.ui-widget-content:has(.user-def-upd_app_order_title) {
+    bottom: 35px;
+}
+
+/* Плейсхолдер таблицы с приложениями выравнивается */
+.user-def-app_table input.ui-table-filter-input::placeholder {
+  position: absolute;
+  left: 22px !important;
+}
+
+.user-def-pop_title .ui-dialog-titlebar.ui-widget-header span { /*24.07.2025*/
+  line-height: 23px;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #000 !important;
+  margin: 0;
+  white-space: nowrap;
+  flex: 1 1 0;
+  width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  height: 23px;
+  position: relative;
+  top: 0px;
+  background-repeat: no-repeat !important;  background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjc2MjQgMTMuOTJMMTQuMzYyNCAyLjRDMTMuNTAyNCAwLjg1IDEyLjMxMjQgMCAxMS4wMDI0IDBDOS42OTI0MiAwIDguNTAyNDIgMC44NSA3LjY0MjQyIDIuNEwxLjI0MjQyIDEzLjkyQzAuNDMyNDE5IDE1LjM5IDAuMzQyNDE5IDE2LjggMC45OTI0MTkgMTcuOTFDMS42NDI0MiAxOS4wMiAyLjkyMjQyIDE5LjYzIDQuNjAyNDIgMTkuNjNIMTcuNDAyNEMxOS4wODI0IDE5LjYzIDIwLjM2MjQgMTkuMDIgMjEuMDEyNCAxNy45MUMyMS42NjI0IDE2LjggMjEuNTcyNCAxNS4zOCAyMC43NjI0IDEzLjkyWk0xMC4yNTI0IDdDMTAuMjUyNCA2LjU5IDEwLjU5MjQgNi4yNSAxMS4wMDI0IDYuMjVDMTEuNDEyNCA2LjI1IDExLjc1MjQgNi41OSAxMS43NTI0IDdWMTJDMTEuNzUyNCAxMi40MSAxMS40MTI0IDEyLjc1IDExLjAwMjQgMTIuNzVDMTAuNTkyNCAxMi43NSAxMC4yNTI0IDEyLjQxIDEwLjI1MjQgMTJWN1pNMTEuNzEyNCAxNS43MUMxMS42NjI0IDE1Ljc1IDExLjYxMjQgMTUuNzkgMTEuNTYyNCAxNS44M0MxMS41MDI0IDE1Ljg3IDExLjQ0MjQgMTUuOSAxMS4zODI0IDE1LjkyQzExLjMyMjQgMTUuOTUgMTEuMjYyNCAxNS45NyAxMS4xOTI0IDE1Ljk4QzExLjEzMjQgMTUuOTkgMTEuMDYyNCAxNiAxMS4wMDI0IDE2QzEwLjk0MjQgMTYgMTAuODcyNCAxNS45OSAxMC44MDI0IDE1Ljk4QzEwLjc0MjQgMTUuOTcgMTAuNjgyNCAxNS45NSAxMC42MjI0IDE1LjkyQzEwLjU2MjQgMTUuOSAxMC41MDI0IDE1Ljg3IDEwLjQ0MjQgMTUuODNDMTAuMzkyNCAxNS43OSAxMC4zNDI0IDE1Ljc1IDEwLjI5MjQgMTUuNzFDMTAuMTEyNCAxNS41MiAxMC4wMDI0IDE1LjI2IDEwLjAwMjQgMTVDMTAuMDAyNCAxNC43NCAxMC4xMTI0IDE0LjQ4IDEwLjI5MjQgMTQuMjlDMTAuMzQyNCAxNC4yNSAxMC4zOTI0IDE0LjIxIDEwLjQ0MjQgMTQuMTdDMTAuNTAyNCAxNC4xMyAxMC41NjI0IDE0LjEgMTAuNjIyNCAxNC4wOEMxMC42ODI0IDE0LjA1IDEwLjc0MjQgMTQuMDMgMTAuODAyNCAxNC4wMkMxMC45MzI0IDEzLjk5IDExLjA3MjQgMTMuOTkgMTEuMTkyNCAxNC4wMkMxMS4yNjI0IDE0LjAzIDExLjMyMjQgMTQuMDUgMTEuMzgyNCAxNC4wOEMxMS40NDI0IDE0LjEgMTEuNTAyNCAxNC4xMyAxMS41NjI0IDE0LjE3QzExLjYxMjQgMTQuMjEgMTEuNjYyNCAxNC4yNSAxMS43MTI0IDE0LjI5QzExLjg5MjQgMTQuNDggMTIuMDAyNCAxNC43NCAxMi4wMDI0IDE1QzEyLjAwMjQgMTUuMjYgMTEuODkyNCAxNS41MiAxMS43MTI0IDE1LjcxWiIgZmlsbD0iI0YwOUEzNyIvPgo8L3N2Zz4K);
+  background-position: 6.4px;
+  padding-top: 0 !important;
+  padding-left: 38.4px !important;
+  padding-bottom: 16px !important;
+  background-repeat: no-repeat !important;
+}
+
+.user-def-pop_radius.ui-dialog.ui-widget.ui-widget-content {
+  border-radius: 8px !important;
+}
+
+.user-def-pop_radius .ui-widget-content {
+    border-radius: 8px !important;
+}
+
+.user-def-group-cancel_ok .button.ui-button.ui-widget.supporting span.ui-button-text.ui-button-in-line {
+    color: #0F5B99 !important;
+}
+.user-def-pril_btn_add .button.ui-button.ui-widget.main {
+    border: 1px solid #0F5B99 !important;
+}
+.user-def-pril_btn_add .button.ui-button.ui-widget.main span {
+     color: #0F5B99 !important;
+}
+.cell-inner.content-tt-cell:has(.user-def-button_delete_row) {
+    overflow: visible !important;
+}
+
+/* Ширина колонки с чекбоксом с таблице */
+.user-def-app_table:has( td.headAction.checkbox-inline-editor.column-lock.with-filter) col:first-child {
+    width: 64px !important; /*27.07.2025*/
+}
+
+
+.user-def-pop_title_pop .ui-dialog-titlebar.ui-widget-header span { /*27.07.2025*/
+  color: #1A1A1C !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #000 !important;
+  margin: 0;
+  white-space: nowrap;
+  flex: 1 1 0;
+  width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  height: 23px;
+  padding-top: 2px !important;
+  position: relative;
+  top: 0px;
+  left: 6.4px !important;
+}
+
+
+.user-def-app_table .ui-table-filter-container { /*27.07.2025*/
+   display: flex;
+    flex-direction: row;
+    margin-top: 0px !important;
+    flex: 1;
+    margin-bottom: 10px !important;
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.user-def-pop_title_pop .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix { /*27.07.2025*/
+    border-top: 1px #E3E8ED solid; 
+    padding-right: 30px !important;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+	padding-left: 24px;
+}
+
+
+.user-def-app_table table.ui-table {
+    min-width: 100% !important;
+}
+
+.user-def-app_table:has( td.headAction.checkbox-inline-editor.column-lock) col:first-child { /*27.07.2025*/
+    width: 64px !important;
+}
+
+.user-def-app_table_not_sort .content.content-tt-cell { /*27.07.2025*/
+    margin-top: 10px !important;
+}
+
+.user-def-app_table_not_sort .checkbox-inline-editor div:has(.checkbox):first-child { /*27.07.2025*/
+    margin-top: -10px !important;
+}
+
+.user-def-date_period .top.row { /*27.07.2025*/
+    margin: 0 20px 4px 20px !important;
+}
+
+.user-def-date_period .text_field.select.tooltip-area { /*27.07.2025*/
+    height: 28px !important;
+}
+
+.user-def-sortdef .text_field.select.tooltip-area {
+    height: 28px !important;
+}
+
+.user-def-otmena_tek .ui-table td.firstCell span {
+    padding-left: 2px !important;
+}
+
+.tab-item-inner:has([data-control-name="Tabs.Примечания"]) {
+    overflow: hidden !important;
+}
+
+[data-control-name="sub_Примечание_1"] {
+    height: 100% !important;
 }

@@ -465,3 +465,13 @@ tr.user-def-file-table-parent::before {
 element.group:has(.user-def-spisok_rassilki) {
     padding-bottom: 0px !important;
 }
+
+.user-def-setting_table .ui-widget.buttonset.center.runtime.boxes_wrapper.horizontal {
+    gap: 16px;
+}
+
+.user-def-setting_table img {
+    position: relative;
+    top: 2px !important;
+}
+

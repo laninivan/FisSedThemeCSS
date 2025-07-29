@@ -69,6 +69,11 @@
     margin-left: 15px !important;
 }
 
+.user-def-mg-l_16 {
+    margin-left: 16px !important;
+}
+
+
 .user-def-mg-l_24 {
     margin-left: 24px !important;
 }
@@ -237,6 +242,9 @@
 
 .user-def-pd-l_0 {
     padding-left: 0px !important;
+}
+.user-def-pd-l_3 {
+     padding-left: 3px !important;
 }
 .user-def-pd-l_4 {
      padding-left: 4px !important;
@@ -472,6 +480,21 @@
     width: 100% !important;
 }
 
+.user-def-min_width0 {
+    min-width: 0px !important;
+}
+.user-def-min_width0 * {
+    min-width: 0px !important;
+}
+
+/* height */
+.user-def-min_height0 {
+    min-height: 0px !important;
+}
+.user-def-min_height0 * {
+    min-height: 0px !important;
+}
+
 /* CHECKBOX */
 .user-def-child-checkbox_16.element.widget .vcm-widget-wrapper .field_container label .checkbox {
     width: 16px !important;
@@ -530,6 +553,15 @@
     width: 100% !important;
 }
 
+.user-def-date_mhead_bgb_4 .top.row {
+    margin-bottom: 4px !important;
+}
+
+.user-def-date_h_28 .text_field {
+   height: 28px !important;
+}
+
+
 /* DISPLAY */
 .user-def-display_b {
     display: block !important;
@@ -581,18 +613,17 @@
 .vcm-theme-halva .vcm-runtime ::-webkit-scrollbar {
     width: 8px;
     background-color: transparent;
-
 }
 
 .vcm-theme-halva .vcm-runtime ::-webkit-scrollbar-track {
-    border-left-width: 6px;
-    border-right-width: 0;
-    background: transparent;  /* 2605 было #F0F1F3*/
+    /* border-left-width: 6px; */
+    /* border-right-width: 0; */
+    /* background: transparent; */  /* 2605 было #F0F1F3*/
 }
 
 .vcm-theme-halva .vcm-runtime ::-webkit-scrollbar-thumb {
     background-color: #B3B3B3;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 
