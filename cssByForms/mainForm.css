@@ -151,7 +151,7 @@ ul.jquery-tree:has(.user-def-catalog-new) {
 
 
 /* Настройка таблицы, группа кнопок */
-.user-def-setting_table .graphbutton::before  {
+/*.user-def-setting_table .graphbutton::before  {
     content: '';
     position: absolute;
     width: 38px !important;
@@ -165,6 +165,23 @@ ul.jquery-tree:has(.user-def-catalog-new) {
 }
 .user-def-setting_table .graphbutton img {
     z-index: 100 !important;
+}  */
+
+.user-def-setting_table_new .graphbutton {
+    margin: 0px 0px 4px 16px !important;
+}
+
+.user-def-setting_table_new img {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+.user-def-setting_table_new .graphbutton {
+  width: auto !important;
+}
+
+.user-def-setting_table_new .graphbutton .image {
+  width: auto !important;
 }
 
 .user-def-setting_table .image {

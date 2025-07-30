@@ -975,25 +975,21 @@ element.style {
 
 .vcm-theme-halva .vcm-runtime .widget-ext-button .button {
   background-color: #ffffff !important;
-  border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  border: 1px solid #0F5B99!important;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
   color: #5e8cb3 !important;
-  /*SED-1523/Zakrashivaetsya-knopka-pri-navedenii*/
-  /*box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 50%);*/
 }
 
 .vcm-theme-halva .vcm-runtime .widget-ext-button .button:hover {
-  background-color: #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  background-color: white !important;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
-  color: white !important;
-  /*SED-1523/Zakrashivaetsya-knopka-pri-navedenii*/
-  /*box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 50%);*/
+  color: #5e8cb3 !important;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-ext-button:not(user-def-cancel_komp).button.additional {
@@ -1006,9 +1002,7 @@ element.style {
 
 .vcm-theme-halva .vcm-runtime .widget-ext-button .button.main {
   background-color: #fff !important;
-  border: 1px solid #5e8cb3 !important;
-
-  /*box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 50%);*/
+  border: 1px solid #0F5B99 !important;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-ext-button .button:hover {
@@ -1048,9 +1042,9 @@ element.style {
 
 .vcm-theme-halva .vcm-runtime .widget-buttonset:not(.user-def-choice_komp) .ui-button {
   background-color: #47479b !important;
-  border-radius: 6px;
+  border-radius: 8px;
   border: none !important;
-  height: 31px;
+  height: 38px;
   /*  padding-top: 3px;  попытка поправить смещение текста -- Журавлев 20.11.2023 */
   transition: 0.2s ease-in-out;
 }
@@ -1220,7 +1214,7 @@ element.style {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 11px;
-  border-color: #9294A2 !important;
+  border-color: #A1AFBF !important;
   border-radius: 5px !important;
   height: 20px !important;
   transition: 0.2s ease-in-out;
@@ -1229,7 +1223,7 @@ element.style {
 
 .vcm-theme-halva .vcm-runtime .checkbox.checked {
   background-color: #47479B !important;
-  border-color: #47479B !important;
+  border-color: #0F5B99 !important;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDExIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMCAxTDMuODEyNSA3Ljc1TDEgNC42ODE4MiIgc3Ryb2tlPSIjRjdGN0ZDIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K) !important;
 
 }
@@ -3602,7 +3596,7 @@ element.style {
   font-size: 16px !important;
   font-weight: 600;
    line-height: 20px !important;
-   padding: 20px 20px 20px 17px !important;
+   padding: 20px 20px 20px 24px !important;
 }
 
 /*кнопка Обновить рег номер*/
@@ -3635,21 +3629,21 @@ element.style {
   border-radius: 20px;
 }
 
-.statusForTableSvjaz {
-  padding-left: 5px;
-  padding-right: 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  color: white;
-  border-radius: 20px;
-}
-
 .forTegsMainForm_SearchSvjaz {
-  margin-left: auto;
-  margin-right: auto;
-  width: 45px !important;
-  display: block;
-  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px !important;
+    display: block;
+    text-align: center;
+    font-size: 12px !important;
+}
+.statusForTableSvjaz {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 100px;
 }
 
 .styletforProjectk {
@@ -3863,7 +3857,7 @@ element.style {
   position: relative;
 }
 
-.ui-head-cell:not(.user-def-app_table .ui-head-cell) {
+.ui-head-cell:not(.user-def-app_table .ui-head-cell):not(.user-def-table_svjaz .ui-head-cell){  /*28.07*/
   text-align: center !important;
 }
 
@@ -4838,6 +4832,7 @@ favorite {
 .ui-dialog .ui-dialog-buttonset {
   display: flex !important;
   gap: 10px !important;
+  margin-right: 19px;
 }
 
 /* Дизайн всплывающего окна confirm, расположение кнопок */
@@ -4949,25 +4944,23 @@ tr.user-def-file-table-parent.hasChilds {
   top: 12px !important;
 }
 
-/*.vcm-theme-beauty .ui-button .ui-button-text:hover {  //SED-1523/Zakrashivaetsya-knopka-pri-navedenii
-  color: white !important;
-}*/
-
-m-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
-  background-color: #ffffff !important;
-  border: 1px solid #5e8cb3 !important;
+.vcm-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
+  background-color: white !important;
+  border: 1px solid #1868AE !important;
   transition: 0.3;
-  color: rgba(142, 178, 210, 1) !important;
+  color: #1868AE  !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-ext-button .button.main:active {
+  background-color: white !important;
+  border: 1px solid #004480 !important;
+  transition: 0.3;
+  color: #004480  !important;
 }
 
 
-
-
-
-
-
 .vcm-theme-beauty .ui-button .ui-button-text {
-  color: unset !important;
+  color: #5e8cb3 !important;
 }
 
 [data-control-name="Кнопка_назад"] {
@@ -4989,17 +4982,27 @@ m-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
 .vcm-theme-halva .vcm-runtime .widget-ext-button .button.supporting {
   background-color: #ffffff !important;
   border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-ext-button .button.supporting:hover {
-  background-color: #5e8cb3 !important;
-  border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  background-color: #ffffff !important;
+  border: 1px solid #1868AE !important;
+  border-radius: 8px;
+  height: 38px;
+  padding-top: 1px;
+  transition: 0.2s ease-in-out;
+}
+
+
+.vcm-theme-halva .vcm-runtime .widget-ext-button .button.supporting:active {
+  background-color: #ffffff !important;
+  border: 1px solid #004480 !important;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
 }
@@ -5009,17 +5012,28 @@ m-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
   cursor: pointer;
   background-image: none;
   background-color: #ffffff !important;
-  border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
+  border: 1px solid #0F5B99  !important;
+  border-radius: 8px;
   transition: 0.2s ease-in-out;
 }
 
 .vcm-theme-beauty .ui-button,
 .vcm-theme-beauty .ui-button.ui-state-default:hover {
-  background-color: #5e8cb3 !important;
-  border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  background-color: #1868AE !important;
+  border: 1px solid #1868AE !important;
+  border-radius: 8px;
+  height: 38px;
+  padding-top: 1px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.vcm-theme-beauty .ui-button,
+.vcm-theme-beauty .ui-button.ui-state-default:active {
+  background-color: #004480 !important;
+  border: 1px solid #004480 !important;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -5027,27 +5041,41 @@ m-theme-halva .vcm-runtime .widget-ext-button .button.main:hover {
 
 .vcm-theme-halva .vcm-runtime .widget-buttonset .ui-button.main {
   background-color: #fff !important;
-  border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  border: 1px solid #0F5B99 !important;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-buttonset .ui-button.main span {
-  color: #5e8cb3 !important;
+  color: #0F5B99 !important;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-buttonset .ui-button.main span:hover {
-  color: #FFF !important;
+  color: #1868AE !important;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-buttonset .ui-button.main span:active {
+  color: #004480 !important;
 }
 
 .vcm-theme-halva .vcm-runtime .widget-buttonset .ui-button.main:hover {
-  background-color: #5e8cb3 !important;
-  border: 1px solid #5e8cb3 !important;
-  border-radius: 6px;
-  height: 31px;
+  background-color: #1868AE !important;
+  border: 1px solid #1868AE !important;
+  border-radius: 8px;
+  height: 38px;
+  padding-top: 1px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.vcm-theme-halva .vcm-runtime .widget-buttonset .ui-button.main:active {
+  background-color: #004480 !important;
+  border: 1px solid #004480 !important;
+  border-radius: 8px;
+  height: 38px;
   padding-top: 1px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -5988,7 +6016,6 @@ custom-checkbox-uncheked {
 .user-def-child-img-16px .graphbutton .image {
   width: auto !important;
 }
-
 
 /*------------------------------------*/
 .user-def-mg-left-auto .inPlacePadding {
@@ -6985,7 +7012,7 @@ div.user-def-main-tabs_bd.element .tab-head-wrapper .tab-head-container .tab-hea
 }
 
 .ui-dialog.ui-widget.ui-widget-content {
-  border-radius: 8px !important;
+  border-radius: 12px !important;
 }
 
 .user-def-spr_kd_title_osn.ui-dialog.ui-widget.ui-widget-content {
@@ -7266,13 +7293,19 @@ div.user-def-main-tabs_bd.element .tab-head-wrapper .tab-head-container .tab-hea
   }
 }
 
-/* Отстууп спраа от крестика модального окна 
+/* Отстууп справа от крестика модального окна 
 Может заафектить другие модальные окна*/
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
-   padding-right: 30px !important;
+   padding-right: 24px !important;
    padding-top: 16px !important;
+     margin-bottom: 0px !important;
+    padding-bottom: 16px !important;
 }
 .vcm-window.ui-dialog-content.ui-widget-content {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+.user-def-add_doc_buttons .ui-button.main:not(.ui-state-disabled) .ui-button-text {
+    color: white !important;
 }

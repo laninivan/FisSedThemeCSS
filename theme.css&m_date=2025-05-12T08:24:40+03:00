@@ -1,0 +1,7 @@
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2FRubik.css');
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2Fall.css');
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2FmainForm.css');
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2Fpassport.css');
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2Ffiles.css');
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2Ficons.css');
+@import url('/platform/rs/themes/Новый_дизайн/getFileByName?path=cssByForms%2Fgeneral.css');
