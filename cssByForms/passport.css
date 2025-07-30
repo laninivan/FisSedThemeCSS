@@ -977,14 +977,28 @@ position:absolute;
 
 
 
-.user-def-app_table .ui-arrow-down { 
+.user-def-app_table .ui-arrow-down {
   background-position: center center !important;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNiA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMy4yNjMyNSAzLjg2OTcxQzMuMjY3IDMuODY0OTEgMy4yNjg1IDMuODU4NTEgMy4yNzIyNSAzLjg1MzcxTDUuODkwMzIgMC43NjgwMjJDNi4wMzY1NiAwLjU5NDQxNyA2LjAzNjU2IDAuMzEyODA5IDUuODkwMzIgMC4xMzkyMDRDNS44ODg4MiAwLjEzNzYwNCA1Ljg4NzMyIDAuMTM2ODA0IDUuODg1ODIgMC4xMzYwMDRDNS44NTMyOCAwLjA5Mzk2NyA1LjgxMjUzIDAuMDYwMDE2NSA1Ljc2NjQyIDAuMDM2NTI1MkM1LjcyMDMxIDAuMDEzMDM0IDUuNjY5OTQgMC4wMDA1Njg1NzEgNS42MTg4NCAwSDAuMzgxOTQ5QzAuMzI5OTEyIDAuMDAwODk2OTk3IDAuMjc4NjkzIDAuMDEzOTcyMiAwLjIzMTkxMyAwLjAzODMwMjJDMC4xODUxMzIgMC4wNjI2MzIyIDAuMTQzOTMgMC4wOTc2MjM2IDAuMTExMjE3IDAuMTQwODA0TDAuMTA5NzE4IDAuMTM5MjA0QzAuMDM4OTQ1MSAwLjIyNjU1NSAwIDAuMzM4MTU2IDAgMC40NTM2MTNDMCAwLjU2OTA2OSAwLjAzODk0NTEgMC42ODA2NzEgMC4xMDk3MTggMC43NjgwMjJMMi43MzM3OSAzLjg2OTcxQzIuNzY2NDUgMy45MTA1NiAyLjgwNzA0IDMuOTQzMzYgMi44NTI3NSAzLjk2NTg2QzIuODk4NDUgMy45ODgzNSAyLjk0ODE4IDQgMi45OTg1MiA0QzMuMDQ4ODUgNCAzLjA5ODU5IDMuOTg4MzUgMy4xNDQyOSAzLjk2NTg2QzMuMTkgMy45NDMzNiAzLjIzMDU4IDMuOTEwNTYgMy4yNjMyNSAzLjg2OTcxWiIgZmlsbD0iI0ExQUZCRiIvPgo8L3N2Zz4K) !important;
+  background-size: 8px !important;
+  top: 9px !important;
+  opacity: 1 !important;
 }
 .user-def-app_table .ui-arrow-up {
     background-position: center center !important;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNiA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMi43MzY3NSAwLjEzMDI5QzIuNzMzIDAuMTM1MDkgMi43MzE1IDAuMTQxNDg5IDIuNzI3NzUgMC4xNDYyOUwwLjEwOTY4IDMuMjMxOThDLTAuMDM2NTYwNSAzLjQwNTU4IC0wLjAzNjU2MDUgMy42ODcxOSAwLjEwOTY4IDMuODYwOEMwLjExMTE3OSAzLjg2MjQgMC4xMTI2NzkgMy44NjMyIDAuMTE0MTc5IDMuODY0QzAuMTQ2NzE2IDMuOTA2MDMgMC4xODc0NjUgMy45Mzk5OCAwLjIzMzU4IDMuOTYzNDdDMC4yNzk2OTQgMy45ODY5NyAwLjMzMDA2MSAzLjk5OTQzIDAuMzgxMTYgNEw1LjYxODA1IDRDNS42NzAwOSAzLjk5OTEgNS43MjEzMSAzLjk4NjAzIDUuNzY4MDkgMy45NjE3QzUuODE0ODcgMy45MzczNyA1Ljg1NjA3IDMuOTAyMzggNS44ODg3OCAzLjg1OTJMNS44OTAyOCAzLjg2MDhDNS45NjEwNSAzLjc3MzQ1IDYgMy42NjE4NCA2IDMuNTQ2MzlDNiAzLjQzMDkzIDUuOTYxMDUgMy4zMTkzMyA1Ljg5MDI4IDMuMjMxOThMMy4yNjYyMSAwLjEzMDI5QzMuMjMzNTUgMC4wODk0Mzk5IDMuMTkyOTYgMC4wNTY2MzY2IDMuMTQ3MjUgMC4wMzQxNDI3QzMuMTAxNTUgMC4wMTE2NDkxIDMuMDUxODIgMi4xOTA5OWUtMDcgMy4wMDE0OCAyLjE0Njk4ZS0wN0MyLjk1MTE1IDIuMTAyOThlLTA3IDIuOTAxNDEgMC4wMTE2NDkxIDIuODU1NzEgMC4wMzQxNDI3QzIuODEgMC4wNTY2MzY1IDIuNzY5NDIgMC4wODk0Mzk4IDIuNzM2NzUgMC4xMzAyOVoiIGZpbGw9IiNBMUFGQkYiLz4KPC9zdmc+Cg==) !important;
+ background-size: 8px !important;
+  top:0px !important;
+  opacity: 1 !important;
 }
+
+
+.user-def-app_table .ui-arrow {
+    right: 21px !important;
+    top: 10px !important;
+}
+
+
 
 /* Таблица, стрелки сортировки  */
 .user-def-app_table .ui-arrow-down.active {
@@ -1331,8 +1345,8 @@ border-top-left-radius: 6px 4px !important;
   padding-right: 12px !important; /*27.07*/
 }
 .user-def-app_table .ui-head-cell .content.content-tt-cell {
-    padding-left: 12px !important; /*27.07*/
-    padding-right: 12px !important; /*27.07*/
+    padding-left: 16px !important; /*27.07*/
+    padding-right: 16px !important; /*27.07*/
 }
 
 /*Убираем скругление, чтобы не отображался уголок у развернутого модального окна  */
@@ -1740,7 +1754,7 @@ border-top-left-radius: 6px 4px !important;
   height: 0px !important;  
 }
 .user-def-child-switcher-no-visible .ui-table-mainheader {
-  padding-bottom: 5px !important;
+  /* padding-bottom: 5px !important; */
 }
 
 .user-def-sort_block tr th,

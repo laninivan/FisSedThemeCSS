@@ -3835,7 +3835,7 @@ element.style {
 .vcm-theme-beauty .vcm-runtime .columns .ui-table thead td {
   background-color: transparent;
   color: #808080;
-  padding: 6px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   height: 0px !important;
   border: none;
   cursor: pointer;
