@@ -837,6 +837,7 @@
 }
 .user-def-app_table .ui-table-wrapper {
   overflow: auto !important;
+  border-bottom: 1px solid #E3E8ED!important;
 }
 
 /* Рамка таблицы приложений */
@@ -861,9 +862,7 @@
 .user-def-app_table span.ui-btn.paginator-control.paginator-control-next {
   margin-right: 24px !important;
 }
-.user-def-app_table .paginator-results {
-  padding-right: 37px !important;
-}
+
 
 /*  Разрыв связей - заголовок*/
 .user-def-link_delete_title {
@@ -898,19 +897,15 @@ position:absolute;
     background-color: #0F5B99 !important;
     color: white !important;
 }
-.user-def-group-cancel_ok .button.ui-button.ui-widget.supporting {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
+
 .user-def-group-cancel_ok .button.ui-button.ui-widget {
     margin: 0px !important;
 }
 
 .user-def-inf_about_gap {
-  padding-left: 19px !important;
   border-top: 1px solid #E3E8ED;
-  padding-top: 11px;
-}
+  padding: 16px 24px
+  }
 
 .user-def-checkbox_conf_gap {
   border-bottom: 1px solid #E3E8ED;
@@ -1023,26 +1018,32 @@ position:absolute;
    background-size: 8px 6px !important;
 }
 
-
-
 .user-def-update_order_repeater .element.widget.widget-ext-number .top {
   display: none !important;
     height: 0px !important;
 }
 .user-def-update_order_repeater .element.widget.widget-ext-number {
-  min-width: 80px !important;
+   min-width: 80px !important;
+   max-width: 80px !important;
+   width: 80px !important;
+   height: 32px;
+   padding: 0px;
 }
-.user-def-update_order_repeater .element.widget.widget-ext-number .text_field  {
+
+.user-def-update_order_repeater input.text_field.number.tooltip-area {
+    height: 32px;
+}
+
+/*.user-def-update_order_repeater .element.widget.widget-ext-number .text_field  {
   width: 80px !important;
-}
+}*/  /*31072025*/
+
 .user-def-update_order_repeater .cell-4 {
     flex: none !important;
 }
 
-
-
 .user-def-update_order_repeater  .vcm-widget-wrapper.jq_text.jq-style-default.runtime {
-  padding-top: 0 !important;
+  padding: 0 !important;
 }
 .user-def-update_order_repeater .group.horizontal-group {
     gap: 24px !important;
@@ -1054,11 +1055,12 @@ position:absolute;
 }
 
 .user-def-update_order_repeater {
-  border-top: 1px solid #E3E8ED !important;
-  border-bottom: 1px solid #E3E8ED !important;
-  padding-top: 14px !important;
-   padding-bottom: 11px !important;
+    /* border-top: 1px solid #E3E8ED !important; */
+    border-bottom: 1px solid #E3E8ED !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
 }
+
 
 .user-def-update_order_repeater .vcm-widget-wrapper.bottom-padding {
   padding-bottom: 0 !important;
@@ -1077,7 +1079,7 @@ position:absolute;
 /* Кнопка-крестик для очистки полей */
 .vcm-widget-wrapper.jq_text.jq-style-default.runtime.fixedWidth.top-padding:has(.user-def-button_close) {
     padding-top: 30px !important;
-	margin-left: 5px;
+	margin-left: 8px;
 }
 
 .element.widget.widget-text:has(.user-def-button_close) {
@@ -1423,7 +1425,7 @@ border-top-left-radius: 6px 4px !important;
 }
 
 .user-def-pop_radius.ui-dialog.ui-widget.ui-widget-content {
-  border-radius: 8px !important;
+  border-radius: 12px !important;
 }
 
 .user-def-pop_radius .ui-widget-content {
@@ -1481,17 +1483,15 @@ border-top-left-radius: 6px 4px !important;
 }
 
 .user-def-pop_title_pop .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix { /*27.07.2025*/
-    border-top: 1px #E3E8ED solid; 
-    padding-right: 30px !important;
-    padding-top: 18px !important;
-    padding-bottom: 18px !important;
-	padding-left: 24px;
+   /* border-top: 1px #E3E8ED solid;  */
+  padding: 16px 24px !important;
 	border-bottom: 1px solid #E3E8ED;
 }
 
 
 .user-def-app_table table.ui-table {
     min-width: 100% !important;
+    border-bottom: 1px solid #E3E8ED!important;
 }
 
 .user-def-app_table:has( td.headAction.checkbox-inline-editor.column-lock) col:first-child { /*27.07.2025*/
@@ -1754,7 +1754,7 @@ border-top-left-radius: 6px 4px !important;
   height: 0px !important;  
 }
 .user-def-child-switcher-no-visible .ui-table-mainheader {
-  /* padding-bottom: 5px !important; */
+  /* margin-bottom: 5px !important; */
 }
 
 .user-def-sort_block tr th,
@@ -1766,4 +1766,80 @@ border-top-left-radius: 6px 4px !important;
 .user-def-table-sort-info .button.ui-button.ui-widget {
     padding-left: 16px !important;
     padding-right: 16px !important;
+}
+
+.user-def-app_table .paginator-results {
+  padding-right: 37px !important;
+  height: 34px !important;
+}
+.user-def-app_table .ui-table-footer {
+    height: auto;
+    min-height: 0px !important;
+}
+.user-def-app_table span.paginator-results {
+    align-items: center;
+    line-height: 34px !important;
+}
+.ui-table-footer:has(.paginator-control-prev) {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.user-def-pop_title .ui-dialog-titlebar-right-wrapper {
+    display: flex;
+    justify-content: end !important;
+    gap: 8px !important;
+}
+
+/* Убрать отступ справа крестика модального окна*/
+.user-def-pop_title .ui-dialog-titlebar::after {
+    position: absolute !important;
+}
+
+.user-def-inf_about_gap .vcm-widget-wrapper.jq_text.jq-style-default.runtime {
+    padding: 0px !important;
+}
+
+/* Разрыв связей, убрать нижний отступ */
+.user-def-pop_title .vcm-window.ui-dialog-content.ui-widget-content {
+    margin-bottom: 0px !important;
+}
+
+.user-def-group-cancel_ok .button.ui-button.ui-widget.supporting {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.user-def-group-cancel_ok .button.ui-button.ui-widget.wide-size.main.ui-state-disabled {
+    opacity: 1 !important;
+    background-color: rgba(142, 178, 210, 1) !important;
+    border: none !important;
+}
+
+.user-def-group-cancel_ok .button.ui-button.ui-widget.wide-size.main.ui-state-disabled span.ui-button-text.ui-button-in-line {
+    color: white !important;
+}
+
+/* Отступы для кнопок ПОиск РегД(ПОиск по данным и очистить фильтры) */
+.user-def-searh_RegD_buttons .button.ui-button.ui-widget.main {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.user-def-searh_RegD_buttons {
+    gap: 16px !important;
+}
+
+/* Настройка высоты шапки таблицы приложений и отчетов */
+.user-def-app_table input.ui-table-filter-input {
+    height: 20px !important;
+}
+.user-def-app_table .ui-table-filter.string-type {
+    height: 20px !important;
+     margin-top: 0px !important;
+}
+.user-def-app_table .ui-table-filter-container {
+    height: 20px !important;
+    /* margin-top: 0.5px !important; */
 }

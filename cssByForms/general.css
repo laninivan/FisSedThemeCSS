@@ -129,6 +129,18 @@
 .user-def-mg-t_16 {
     margin-top: 16px !important;
 }
+.user-def-mg-t_17 {
+    margin-top: 17px !important;
+}
+.user-def-mg-t_18 {
+    margin-top: 18px !important;
+}
+.user-def-mg-t_19 {
+    margin-top: 19px !important;
+}
+.user-def-mg-t_20 {
+    margin-top: 20px !important;
+}
 
 .user-def-mg-b_0 {
     margin-bottom: 0px !important;
@@ -646,6 +658,10 @@
     /* border-radius: 20px; */
 }
 
+/*INPUTS  */
+.vcm-theme-beauty .field_container .text_field {
+    height: 32px
+}
 
 /*тест*/
 /* .vcm-theme-halva .vcm-runtime ::-webkit-scrollbar {

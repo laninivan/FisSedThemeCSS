@@ -251,7 +251,7 @@ div.ui-table-header-scroll-space {
 
 .vcm-theme-halva .vcm-runtime .widget-ext-grid:not(.user-def-files-table) .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr td .cell-border {
     background: none !important;
-    border: none !important;
+    /* border: none !important; */
 }
 
 .user-def-files-table {
@@ -475,3 +475,10 @@ element.group:has(.user-def-spisok_rassilki) {
     top: 2px !important;
 }
 
+/* Уьрана обводка последней выделенной строки */
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-top,
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:focus .ui-table tbody tr.last_selected td .cell-border-bottom,
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-top,
+.vcm-theme-beauty .jq_default__grid .ui-table-wrapper:active .ui-table tbody tr.last_selected td .cell-border-bottom {
+    opacity: 0;
+}
