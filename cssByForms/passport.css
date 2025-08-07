@@ -835,16 +835,14 @@
   text-align: center;
   color: gray !important;
 }
-.user-def-app_table .ui-table-wrapper {
-  overflow: auto !important;
-  border-bottom: 1px solid #E3E8ED!important;
-}
+
 
 /* Рамка таблицы приложений */
 .user-def-app_table {
   border: 1px solid #E3E8ED;
   border-left: none !important;
   border-right: none !important;
+  min-height: 0px !important;
 }
 
 /* Убираем пространства неотображаемого скроллбара в заголовке  */
@@ -910,7 +908,7 @@ position:absolute;
 .user-def-checkbox_conf_gap {
   border-bottom: 1px solid #E3E8ED;
   padding-left: 24px !important;
-  padding-top: 8px !important;
+  /* padding-top: 8px !important; */
 }
 
 .user-def-table-sort-info .ui-dialog-title {
@@ -928,7 +926,7 @@ position:absolute;
 
 .user-def-sort_block {
      border-bottom: 1px solid #E3E8ED;
-    border-top: 1px solid #E3E8ED;
+    /* border-top: 1px solid #E3E8ED; */
      /* padding-left: 11px;*/
     padding: 16px 24px;
   
@@ -964,10 +962,12 @@ position:absolute;
 /* .user-def-table-sort-info .ui-dialog-titlebar-close { */
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all .ui-dialog-titlebar-close {
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjM5NTcgMS44MTI4NkMxMS43Mjk1IDEuNDc5MTIgMTEuNzI5NSAwLjkzODAyNCAxMS4zOTU3IDAuNjA0Mjg2QzExLjA2MiAwLjI3MDU0OCAxMC41MjA5IDAuMjcwNTQ4IDEwLjE4NzEgMC42MDQyODZMNiA0Ljc5MTQzTDEuODEyODYgMC42MDQyODZDMS40NzkxMiAwLjI3MDU0OCAwLjkzODAyNCAwLjI3MDU0OCAwLjYwNDI4NiAwLjYwNDI4NkMwLjI3MDU0OCAwLjkzODAyNCAwLjI3MDU0OCAxLjQ3OTEyIDAuNjA0Mjg2IDEuODEyODZMNC43OTE0MyA2TDAuNjA0Mjg2IDEwLjE4NzFDMC4yNzA1NDggMTAuNTIwOSAwLjI3MDU0OCAxMS4wNjIgMC42MDQyODYgMTEuMzk1N0MwLjkzODAyNCAxMS43Mjk1IDEuNDc5MTIgMTEuNzI5NSAxLjgxMjg2IDExLjM5NTdMNiA3LjIwODU3TDEwLjE4NzEgMTEuMzk1N0MxMC41MjA5IDExLjcyOTUgMTEuMDYyIDExLjcyOTUgMTEuMzk1NyAxMS4zOTU3QzExLjcyOTUgMTEuMDYyIDExLjcyOTUgMTAuNTIwOSAxMS4zOTU3IDEwLjE4NzFMNy4yMDg1NyA2TDExLjM5NTcgMS44MTI4NloiIGZpbGw9IiMxQTFBMUMiLz4KPC9zdmc+Cg==) !important;
-  width: 12px !important;
-  height: 12px !important;
-  background-color: transparent;
-  margin-left: 8px !important;
+      width: 12px !important;
+    height: 12px !important;
+    background-color: transparent;
+    margin: 8px 0px 8px 12px !important;
+    background-repeat: no-repeat !important;
+    padding: 6px 6px 6px 6px;
 }
 
 
@@ -1010,8 +1010,30 @@ position:absolute;
 }
 
 .user-def-app_table .ui-table-mainheader .righthead-controls .checkbox {
-    width: 16px !important;
+   width: 16px !important;
   height: 16px !important;
+  margin-left: 8px;
+}
+
+.user-def-app_table .drop-down-grid .name {
+    vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+    padding-left: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 12px !important;
+	padding-top: 6px !important;
+}
+
+.user-def-app_table .drop-down-grid .row:last-child {
+    margin-bottom: 8px  !important;
+}
+
+.user-def-app_table .drop-down-grid .row {
+    white-space: nowrap;
+    margin-bottom: 8px;
+    margin-top: 8px !important;
 }
 
 .user-def-app_table .ui-table-mainheader .righthead-controls .checkbox.checked {
@@ -1032,6 +1054,7 @@ position:absolute;
 
 .user-def-update_order_repeater input.text_field.number.tooltip-area {
     height: 32px;
+	width: 80px !important;
 }
 
 /*.user-def-update_order_repeater .element.widget.widget-ext-number .text_field  {
@@ -1122,7 +1145,7 @@ position:absolute;
 .user-def-add_doc_search_panel {
   padding-top: 16px !important;
   padding-left: 14px !important;
-  border-top: 1px #E3E8ED solid; /*27.07*/
+ /* border-top: 1px #E3E8ED solid; /*27.07*/
 }
 
 
@@ -1172,10 +1195,10 @@ position:absolute;
 }
 
 /* Цвет родительских строк */
-.user-def-app_table .ui-table.hierarchy tr.hasChilds.opened td * span {
-    color: black !important;
-    font-weight: 600 !important;
-}
+/*.user-def-app_table .ui-table.hierarchy tr.hasChilds.opened td * span {
+    color: #1A1A1C !important;
+    font-weight: 500 !important;
+}*/
 
 /* Выравнивание чекбоксов таблицы повертикали */
 .user-def-app_table .checkbox-inline-editor div:has(.checkbox) {
@@ -1207,17 +1230,21 @@ position:absolute;
    padding: 4px !important;
 }
 .user-def-child-switcher-no-visible .drop-down-grid {
-   
     right: 20px;
     border: none;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
-    max-height: 480px !important;
+    box-shadow: 0px 0px 0px 0px #0000000D, 0px 1px 2px 0px #0000000D, 0px 4px 4px 0px #0000000A, 0px 8px 5px 0px #00000008, 0px 15px 6px 0px #00000003, 0px 23px 6px 0px #00000000;
+    max-height: 580px !important;
+	border-radius: 8px  !important;
 }
 
 /* Примечание, инпут, плейсхолдер */
 .user-def-primechanie_input textarea.text_field.tooltip-area::placeholder {
     color: #A1AFBF !important;
     font-weight: 400;
+}
+
+[data-control-name="sub_Примечание_1"] {
+    height: 100% !important;
 }
 .user-def-primechanie_input {
   background: white;
@@ -1232,6 +1259,7 @@ position:absolute;
 							0px 8px 5px 0px rgba(0, 0, 0, 0.03),
 							0px 15px 6px 0px rgba(0, 0, 0, 0.01),
 							0px 23px 6px 0px rgba(0, 0, 0, 0);
+  height: calc(100% - 24px) !important;
 }
 
 .user-def-primechanie_input .center.row {
@@ -1243,6 +1271,8 @@ position:absolute;
   font-family: 'Rubik', regular !important;
   line-height: 20px;
   font-size: 14px;
+  position: absolute;
+  top:-8px;
 }
 
 .user-def-primechanie_input .input-wrapper .fields-wrapper.input-border textarea.text_field.tooltip-area {
@@ -1263,6 +1293,37 @@ border-top-left-radius: 12px 4px !important;
 .user-def-primechanie_input textarea::-webkit-scrollbar-track {
   background-color: #ffffff !important;
 }
+.user-def-primechanie_input:after {
+    content: "";
+    position: absolute;
+    width: -webkit-calc(100% - 40px);
+    height: -webkit-calc(100% - 52px);
+    top: 36px;
+    right: 20px;
+    
+    z-index: 2;
+    background-color:  #ECEFF3;
+    pointer-events:none;
+    border-radius:4px;
+}
+
+.user-def-primechanie_input textarea  {
+    background-color: #380dd200 !important;
+    color: #000000 !important;
+    z-index: 3;
+    padding: 0px !important;
+    
+}
+.user-def-primechanie_input .field_container.textarea .center.row .input-wrapper .fields-wrapper.input-border {
+    background-color: white !important;
+}
+
+
+.user-def-primechanie_input .fields-wrapper.input-border {
+    background-color: #ffffff !important;
+}
+
+
 
 /* Настройка вертикальных отступов и высоты для кнопок приложения */
 
@@ -1283,6 +1344,14 @@ border-top-left-radius: 12px 4px !important;
   height: 100% !important;
 }
 
+.vcm-theme-beauty .ui-dialog {
+  font-family: Rubik, medium  !important;
+}
+
+.button.ui-button.ui-widget.main {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
 
 .user-def-pril_btn_add,
 .user-def-pril_btn_refresh,
@@ -1298,6 +1367,7 @@ border-top-left-radius: 12px 4px !important;
 .user-def-pril_btn_change .field_container  {
     height: 100% !important;
 }
+
 .user-def-pril_btn_add .button.ui-button.ui-widget.ui-button-icon-left.main span.ui-button-text.ui-button-in-line, 
 .user-def-pril_btn_change .button.ui-button.ui-widget.ui-button-icon-left.main span.ui-button-text.ui-button-in-line ,
 .user-def-pril_btn_refresh .button.ui-button.ui-widget.ui-button-icon-left.main span.ui-button-text.ui-button-in-line {
@@ -1343,8 +1413,8 @@ border-top-left-radius: 6px 4px !important;
   padding: 0px !important;
 }
 .user-def-app_table td span {
-  padding-left: 12px !important; /*27.07*/
-  padding-right: 12px !important; /*27.07*/
+  padding-left: 7px !important; /*27.07*/
+  padding-right: 7px !important; /*27.07*/
 }
 .user-def-app_table .ui-head-cell .content.content-tt-cell {
     padding-left: 16px !important; /*27.07*/
@@ -1429,7 +1499,7 @@ border-top-left-radius: 6px 4px !important;
 }
 
 .user-def-pop_radius .ui-widget-content {
-    border-radius: 8px !important;
+    border-radius: 0px 0px 8px 8px !important;
 }
 
 .user-def-group-cancel_ok .button.ui-button.ui-widget.supporting span.ui-button-text.ui-button-in-line {
@@ -1452,23 +1522,34 @@ border-top-left-radius: 6px 4px !important;
 
 
 .user-def-pop_title_pop .ui-dialog-titlebar.ui-widget-header span { /*27.07.2025*/
-  color: #1A1A1C !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  color: #000 !important;
-  margin: 0;
-  white-space: nowrap;
-  flex: 1 1 0;
-  width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  height: 23px;
-  padding-top: 2px !important;
-  position: relative;
-  top: 0px;
-  left: 6.4px !important;
+    color: #1A1A1C !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #000 !important;
+    margin: 0;
+    white-space: nowrap;
+    flex: 1 1 0;
+    width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    height: 23px;
+    padding-top: 2px !important;
+    position: relative;
+    /* top: 0px; */
+    left: 0px !important;  -- вот это вот 
+    padding-left: 0px;
+}
+
+
+
+.ui-helper-clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 
@@ -1488,10 +1569,9 @@ border-top-left-radius: 6px 4px !important;
 	border-bottom: 1px solid #E3E8ED;
 }
 
-
-.user-def-app_table table.ui-table {
-    min-width: 100% !important;
-    border-bottom: 1px solid #E3E8ED!important;
+.user-def-pop_title_pop.ui-dialog .ui-dialog-content {
+    padding: 0 !important;
+    max-width: none !important;
 }
 
 .user-def-app_table:has( td.headAction.checkbox-inline-editor.column-lock) col:first-child { /*27.07.2025*/
@@ -1736,11 +1816,9 @@ border-top-left-radius: 6px 4px !important;
   color: #A1AFBF !important;
 }
 
-[data-control-name="sub_Примечание_1"] {
+[data-control-name="sub_Примечание_1"] [data-control-name="abs_Контейнер_приложения_1"] {
     height: 100% !important;
 }
-
-
 
 .user-def-app_table .ui-table-wrapper::-webkit-scrollbar-thumb:horizontal {
     border-radius: 28px !important;
@@ -1779,6 +1857,7 @@ border-top-left-radius: 6px 4px !important;
 .user-def-app_table span.paginator-results {
     align-items: center;
     line-height: 34px !important;
+    padding-right: 16px !important;
 }
 .ui-table-footer:has(.paginator-control-prev) {
     padding-top: 8px !important;
@@ -1842,4 +1921,150 @@ border-top-left-radius: 6px 4px !important;
 .user-def-app_table .ui-table-filter-container {
     height: 20px !important;
     /* margin-top: 0.5px !important; */
+}
+
+
+.user-def-app_table .ui-table-wrapper {
+  overflow: auto !important;
+  min-height: 0px !important;
+  /* border-bottom: 1px solid #E3E8ED!important; */
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.tooltip-area.tooltip-anchor:has(.expanded) {
+	border-top: 1px solid #E3E8ED !important;
+}
+
+/* Группа настроек таблицы отступ */
+.user-def-setting_table_new .vcm-widget-wrapper.stop-propagation-for-panel {
+    padding-right: 0px !important;
+}
+/* Таблица отменяемые отступы для родительских элементов */
+.user-def-app_table .hasChilds  td.firstCell {
+    padding-left: 33px !important;
+}
+
+.user-def-app_table .hasChilds  td.firstCell span {
+    padding-left: 4px !important;
+    font-family: 'Rubik' !important;
+}
+
+.user-def-app_table .hasChilds td.firstCell::before {
+    width: 8px !important;
+}
+
+.user-def-inf_about_gap .vcm-widget-wrapper.jq_text.jq-style-default.runtime .jq_text_wrapper div {
+    line-height: 20px !important;
+}
+.user-def-checkbox_conf_gap .vcm-widget-wrapper.stop-propagation-for-panel.top-padding.bottom-padding.right-padding {
+    padding-top: 0px !important;
+}
+
+.user-def-app_table .ui-table.hierarchy tr.hasChilds td.firstCell:before {
+  content: '+' !important;
+  display: block;
+  background: none !important;
+  position: absolute;
+  width: 8px !important;
+  height: 10px;
+  line-height: 20px !important;
+  font-size: 14px !important;
+  top: 7px !important;
+  cursor: pointer;
+  margin-left: -6px !important;
+  font-weight: 500 !important;
+  color: #0F5B99 !important;
+}
+.user-def-app_table .ui-table.hierarchy tr.hasChilds.opened td.firstCell:before {
+  content: '-' !important;
+  display: block;
+  background: none !important;
+  position: absolute;
+  width: 8px !important;
+  height: 10px;
+  line-height: 20px !important;
+  font-size: 14px !important;
+  top: 7px !important;
+  cursor: pointer;
+  margin-left: -6px !important;
+  font-weight: 500 !important;
+  color: #0F5B99 !important;
+}
+
+/* Изменение отступов серых заголовков на форме добавления отменяеемыхх */
+/* [data-control-id="Основной.Формы.Паспорт_ОРД.sub_Поиск_Отменяемые_документы"]  */
+.user-def-gray-title .top.row span.label {
+    line-height: 20px !important;
+}
+
+.user-def-app_table table.ui-table {
+    min-width: 100% !important;
+    /* border-bottom: 1px solid #E3E8ED!important; */
+}
+
+.user-def-app_table .ui-table-header-wrapper {
+  border-bottom: 1px solid #E3E8ED!important;
+}
+
+.user-def-app_table .ui-columns-table .ui-table-wrapper .ui-table-wrapper-content tr td {
+    border-color: #BFC7DA;
+    border-bottom: none;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.5;
+    vertical-align: middle !important;
+}
+
+.user-def-app_table .ui-table-filter.date-type {
+    height: 20px !important;
+    margin-top: 0px !important;
+}
+
+
+/* .user-def-app_table  .ui-table-header-content .ui-table,
+.user-def-app_table .ui-table-header-content thead {
+  display: flex !important;
+  width: 100% !important;
+}
+
+.user-def-app_table .jq_default__grid .ui-table-header .ui-arrow {
+  position: static !important;
+  background-color: red !important;
+}
+
+.user-def-app_table .ui-head-cell.ui-table-sortable.ui-table-sort-down {
+  background-color: green !important;
+  display: flex !important;
+  height: 100% !important;
+  flex-direction:row-reverse;
+}
+
+.user-def-app_table .content.content-tt-cell {
+  background-color: yellow !important;
+}
+ */
+
+.user-def-app_table .inline-inner {
+    height: auto !important;
+    top: 6px !important;
+}
+
+.user-def-app_table .ui-columns-table .checkbox.checked {
+    background-color: #0F5B99 !important;
+    border-color: #0F5B99 !important;
+}
+
+.user-def-paginator_mg_r_0 span.paginator-results {
+    margin-right: 0px !important;
+}
+
+.user-def-btn_svjazy .ui-button {
+    height: 38px !important;
+}
+
+.user-def-btn_svjazy .buttonset {
+    height: 38px !important;
+}
+
+.user-def-gray-label .label {
+  color: #747781 !important;
 }

@@ -8,8 +8,22 @@ element.style {
 }
 
 .vcm-theme-halva .vcm-runtime * {
-  /*font-family: "Rubik", sans-serif !important;*/
-  font-family: "Rubik", regular !important;
+  font-family: "Rubik", sans-serif !important;
+}
+
+.ui-dialogFR.error .ui-dialog-titlebar .ui-dialog-titlebar-maximizable {
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    width: 15px;
+    margin-right: 8px;
+    height: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../../~/res/d4d867b4..gif);
+    background-position: 0 0;
+    border: 0;
 }
 
 
@@ -2930,7 +2944,7 @@ element.style {
 .ui-dialog,
 .ui-dialog.ui-widget.ui-widget-content.jq_popup_message {
   border: none !important;
-  border-radius: 6px !important;
+  border-radius: 12px !important;
   box-shadow: 0 9px 46px rgba(86, 87, 88, 0.08), 0 11px 15px rgba(86, 87, 88, 0.16) !important;
 }
 
@@ -2995,10 +3009,11 @@ element.style {
 
 .vcm-theme-beauty .ui-dialog-titlebar-close:hover,
 .vcm-theme-beauty .ui-dialog-titlebar-maximizable:hover {
-  background: #CCCC !important;
+  background: #f7f7f7 !important;
   border-radius: 2px;
   background-clip: border-box;
   background-position: center;
+  background-size: cover !important;  /*01.08.2025*/
 }
 
 .vcm-theme-beauty .ui-dialog-titlebar-maximizable.expanded:after {
@@ -3344,22 +3359,24 @@ element.style {
 /*кнопка Удалить строку (Используется в таблицах Приложение и Отменяемые)*/
 .user-def-button_delete_row {
   border: none;
-  color: white;
-  cursor: pointer;
-  line-height: 19px;
-  text-align: center;
-  font-size: 16px;
-  min-width: 24px;
-  min-height: 24px;
-  /*left: 10px;*/
-  /* margin: 4px 5px;*/
-  position: relative;
-  padding: 0px;
-  background-color: transparent;
-  border-radius: 6px;
-  background-position: center center;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3Ljg2NyA3Ljk5OTkySDE1LjIwMDRWNy4zMzMyNUMxNS4yMDA0IDYuODAyODIgMTQuOTg5NiA2LjI5NDExIDE0LjYxNDYgNS45MTkwNEMxNC4yMzk1IDUuNTQzOTcgMTMuNzMwOCA1LjMzMzI1IDEzLjIwMDQgNS4zMzMyNUgxMS44NjdDMTEuMzM2NiA1LjMzMzI1IDEwLjgyNzkgNS41NDM5NyAxMC40NTI4IDUuOTE5MDRDMTAuMDc3NyA2LjI5NDExIDkuODY3MDIgNi44MDI4MiA5Ljg2NzAyIDcuMzMzMjVWNy45OTk5Mkg3LjIwMDM2QzcuMDIzNTUgNy45OTk5MiA2Ljg1Mzk4IDguMDcwMTYgNi43Mjg5NSA4LjE5NTE4QzYuNjAzOTMgOC4zMjAyMSA2LjUzMzY5IDguNDg5NzcgNi41MzM2OSA4LjY2NjU5QzYuNTMzNjkgOC44NDM0IDYuNjAzOTMgOS4wMTI5NyA2LjcyODk1IDkuMTM3OTlDNi44NTM5OCA5LjI2MzAxIDcuMDIzNTUgOS4zMzMyNSA3LjIwMDM2IDkuMzMzMjVINy44NjcwMlYxNi42NjY2QzcuODY3MDIgMTcuMTk3IDguMDc3NzQgMTcuNzA1NyA4LjQ1MjgxIDE4LjA4MDhDOC44Mjc4OCAxOC40NTU5IDkuMzM2NTkgMTguNjY2NiA5Ljg2NzAyIDE4LjY2NjZIMTUuMjAwNEMxNS43MzA4IDE4LjY2NjYgMTYuMjM5NSAxOC40NTU5IDE2LjYxNDYgMTguMDgwOEMxNi45ODk2IDE3LjcwNTcgMTcuMjAwNCAxNy4xOTcgMTcuMjAwNCAxNi42NjY2VjkuMzMzMjVIMTcuODY3QzE4LjA0MzggOS4zMzMyNSAxOC4yMTM0IDkuMjYzMDEgMTguMzM4NCA5LjEzNzk5QzE4LjQ2MzUgOS4wMTI5NyAxOC41MzM3IDguODQzNCAxOC41MzM3IDguNjY2NTlDMTguNTMzNyA4LjQ4OTc3IDE4LjQ2MzUgOC4zMjAyMSAxOC4zMzg0IDguMTk1MThDMTguMjEzNCA4LjA3MDE2IDE4LjA0MzggNy45OTk5MiAxNy44NjcgNy45OTk5MlpNMTEuMjAwNCA3LjMzMzI1QzExLjIwMDQgNy4xNTY0NCAxMS4yNzA2IDYuOTg2ODcgMTEuMzk1NiA2Ljg2MTg1QzExLjUyMDYgNi43MzY4MiAxMS42OTAyIDYuNjY2NTkgMTEuODY3IDYuNjY2NTlIMTMuMjAwNEMxMy4zNzcyIDYuNjY2NTkgMTMuNTQ2NyA2LjczNjgyIDEzLjY3MTggNi44NjE4NUMxMy43OTY4IDYuOTg2ODcgMTMuODY3IDcuMTU2NDQgMTMuODY3IDcuMzMzMjVWNy45OTk5MkgxMS4yMDA0VjcuMzMzMjVaTTE1Ljg2NyAxNi42NjY2QzE1Ljg2NyAxNi44NDM0IDE1Ljc5NjggMTcuMDEzIDE1LjY3MTggMTcuMTM4QzE1LjU0NjcgMTcuMjYzIDE1LjM3NzIgMTcuMzMzMyAxNS4yMDA0IDE3LjMzMzNIOS44NjcwMkM5LjY5MDIxIDE3LjMzMzMgOS41MjA2NCAxNy4yNjMgOS4zOTU2MiAxNy4xMzhDOS4yNzA2IDE3LjAxMyA5LjIwMDM2IDE2Ljg0MzQgOS4yMDAzNiAxNi42NjY2VjkuMzMzMjVIMTUuODY3VjE2LjY2NjZaIiBmaWxsPSIjMEY1Qjk5Ii8+Cjwvc3ZnPgo=') !important;
-  background-repeat: no-repeat;
+    color: white;
+    cursor: pointer;
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 3px 0px opx opx !important;
+    /* left: 10px; */
+    /* margin: 4px 5px; */
+    position: relative;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 6px;
+    background-position: center center;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3Ljg2NyA3Ljk5OTkySDE1LjIwMDRWNy4zMzMyNUMxNS4yMDA0IDYuODAyODIgMTQuOTg5NiA2LjI5NDExIDE0LjYxNDYgNS45MTkwNEMxNC4yMzk1IDUuNTQzOTcgMTMuNzMwOCA1LjMzMzI1IDEzLjIwMDQgNS4zMzMyNUgxMS44NjdDMTEuMzM2NiA1LjMzMzI1IDEwLjgyNzkgNS41NDM5NyAxMC40NTI4IDUuOTE5MDRDMTAuMDc3NyA2LjI5NDExIDkuODY3MDIgNi44MDI4MiA5Ljg2NzAyIDcuMzMzMjVWNy45OTk5Mkg3LjIwMDM2QzcuMDIzNTUgNy45OTk5MiA2Ljg1Mzk4IDguMDcwMTYgNi43Mjg5NSA4LjE5NTE4QzYuNjAzOTMgOC4zMjAyMSA2LjUzMzY5IDguNDg5NzcgNi41MzM2OSA4LjY2NjU5QzYuNTMzNjkgOC44NDM0IDYuNjAzOTMgOS4wMTI5NyA2LjcyODk1IDkuMTM3OTlDNi44NTM5OCA5LjI2MzAxIDcuMDIzNTUgOS4zMzMyNSA3LjIwMDM2IDkuMzMzMjVINy44NjcwMlYxNi42NjY2QzcuODY3MDIgMTcuMTk3IDguMDc3NzQgMTcuNzA1NyA4LjQ1MjgxIDE4LjA4MDhDOC44Mjc4OCAxOC40NTU5IDkuMzM2NTkgMTguNjY2NiA5Ljg2NzAyIDE4LjY2NjZIMTUuMjAwNEMxNS43MzA4IDE4LjY2NjYgMTYuMjM5NSAxOC40NTU5IDE2LjYxNDYgMTguMDgwOEMxNi45ODk2IDE3LjcwNTcgMTcuMjAwNCAxNy4xOTcgMTcuMjAwNCAxNi42NjY2VjkuMzMzMjVIMTcuODY3QzE4LjA0MzggOS4zMzMyNSAxOC4yMTM0IDkuMjYzMDEgMTguMzM4NCA5LjEzNzk5QzE4LjQ2MzUgOS4wMTI5NyAxOC41MzM3IDguODQzNCAxOC41MzM3IDguNjY2NTlDMTguNTMzNyA4LjQ4OTc3IDE4LjQ2MzUgOC4zMjAyMSAxOC4zMzg0IDguMTk1MThDMTguMjEzNCA4LjA3MDE2IDE4LjA0MzggNy45OTk5MiAxNy44NjcgNy45OTk5MlpNMTEuMjAwNCA3LjMzMzI1QzExLjIwMDQgNy4xNTY0NCAxMS4yNzA2IDYuOTg2ODcgMTEuMzk1NiA2Ljg2MTg1QzExLjUyMDYgNi43MzY4MiAxMS42OTAyIDYuNjY2NTkgMTEuODY3IDYuNjY2NTlIMTMuMjAwNEMxMy4zNzcyIDYuNjY2NTkgMTMuNTQ2NyA2LjczNjgyIDEzLjY3MTggNi44NjE4NUMxMy43OTY4IDYuOTg2ODcgMTMuODY3IDcuMTU2NDQgMTMuODY3IDcuMzMzMjVWNy45OTk5MkgxMS4yMDA0VjcuMzMzMjVaTTE1Ljg2NyAxNi42NjY2QzE1Ljg2NyAxNi44NDM0IDE1Ljc5NjggMTcuMDEzIDE1LjY3MTggMTcuMTM4QzE1LjU0NjcgMTcuMjYzIDE1LjM3NzIgMTcuMzMzMyAxNS4yMDA0IDE3LjMzMzNIOS44NjcwMkM5LjY5MDIxIDE3LjMzMzMgOS41MjA2NCAxNy4yNjMgOS4zOTU2MiAxNy4xMzhDOS4yNzA2IDE3LjAxMyA5LjIwMDM2IDE2Ljg0MzQgOS4yMDAzNiAxNi42NjY2VjkuMzMzMjVIMTUuODY3VjE2LjY2NjZaIiBmaWxsPSIjMEY1Qjk5Ii8+Cjwvc3ZnPgo=) !important;
+    background-repeat: no-repeat;
 }
 
 /*кнопка Поиск*/
@@ -3441,6 +3458,11 @@ element.style {
 /*выделить жирным*/
 .user-def-boldcell {
   font-weight: bold !important;
+}
+
+.user-def-hierarchy {
+    color: #1A1A1C !important;
+    font-weight: 500 !important;
 }
 
 /*кнопка свернуть*/
@@ -4965,9 +4987,23 @@ tr.user-def-file-table-parent.hasChilds {
 }
 
 
-.vcm-theme-beauty .ui-button .ui-button-text {
-  color: #5e8cb3 !important;
+/*.vcm-theme-beauty .ui-button .ui-button-text {
+    color: #5e8cb3 !important;
+}*/
+
+.vcm-theme-halva .vcm-runtime .widget-ext-button:not(.user-def-us_button):not(.user-def-white_button) .ui-button .ui-button-text {
+    color: #5e8cb3 !important;
 }
+
+.user-def-white_button .ui-button .ui-button-text {
+    color: #fff !important;
+}
+
+
+ .vcm-theme-beauty .ui-button.ui-state-default .ui-button-text {
+     color: #5e8cb3 !important;
+}
+
 
 [data-control-name="Кнопка_назад"] {
   /* top: -10px; */
@@ -6380,12 +6416,12 @@ custom-checkbox-uncheked {
 
 
 .vcm-theme-halva .vcm-runtime .user-def-us_button .button.ui-button.ui-widget {
-  background-color: #47479b !important;
+  background-color: #0F5B99 !important;
   color: white !important;
 }
 
 .vcm-theme-halva .vcm-runtime .user-def-us_button .widget-ext-button .button:hover {
-  background-color: #47479b !important;
+  background-color: #1868AE !important;
   color: white !important;
 }
 
@@ -6445,19 +6481,6 @@ custom-checkbox-uncheked {
 
 .vcm-theme-halva .vcm-runtime .user-def-clear_button.widget-ext-button .button.additional span:hover {
   background-color: aliceblue !important;
-}
-
-.user-def-table_with_border .columns .ui-table thead td {
-  background-color: transparent;
-  color: #E3E8ED !important;
-  padding: 3px;
-  height: 0px !important;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border-bottom: 1px solid #E3E8ED !important;
-  border-left: 1px solid #E3E8ED !important;
-  border-right: 1px solid #E3E8ED !important;
 }
 
 .user-def-table_with_border .ui-columns-table .ui-table-header .ui-table-header-content .ui-head-cell .content,
@@ -7228,6 +7251,10 @@ div.user-def-main-tabs_bd.element .tab-head-wrapper .tab-head-container .tab-hea
 }
 
 
+.user-def-button_in_bd {
+    height: 30px !important;
+}
+
 .wloadercontent {
   /*position: absolute;*/
   top: 0;
@@ -7312,4 +7339,18 @@ div.user-def-main-tabs_bd.element .tab-head-wrapper .tab-head-container .tab-hea
 
 .user-def-add_doc_buttons .ui-button.main:not(.ui-state-disabled) .ui-button-text {
     color: white !important;
+}
+
+
+.user-def-table_with_border .columns .ui-table thead td {
+  background-color: transparent;
+  color: #E3E8ED !important;
+  padding: 3px;
+  height: 0px !important;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* border-bottom: 1px solid #E3E8ED !important; */
+  border-left: 1px solid #E3E8ED !important;
+  border-right: 1px solid #E3E8ED !important;
 }
