@@ -3622,6 +3622,17 @@ element.style {
    padding: 20px 20px 20px 24px !important;
 }
 
+.user-def-font_size16_20px {
+  font-size: 16px !important;
+}
+
+.user-def-font_size16_20px .jq-header-caption-text {
+  font-size: 16px !important;
+  font-weight: 600;
+   line-height: 20px !important;
+   padding: 20px 20px 20px 20px !important;
+}
+
 /*кнопка Обновить рег номер*/
 .user-def-button_refresh_reg_num {
   border: none;
@@ -6704,6 +6715,10 @@ custom-checkbox-uncheked {
 
 .user-def-pd-t_20 {
   padding-top: 20px !important;
+}
+
+.user-def-pd-t_34 {
+  padding-top: 34px !important;
 }
 
 .user-def-pd-b_20 {

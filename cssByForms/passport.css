@@ -1242,10 +1242,6 @@ position:absolute;
     color: #A1AFBF !important;
     font-weight: 400;
 }
-
-[data-control-name="sub_Примечание_1"] {
-    height: 100% !important;
-}
 .user-def-primechanie_input {
   background: white;
   padding-top: 24px !important;
@@ -1259,7 +1255,6 @@ position:absolute;
 							0px 8px 5px 0px rgba(0, 0, 0, 0.03),
 							0px 15px 6px 0px rgba(0, 0, 0, 0.01),
 							0px 23px 6px 0px rgba(0, 0, 0, 0);
-  height: calc(100% - 24px) !important;
 }
 
 .user-def-primechanie_input .center.row {
@@ -1271,8 +1266,6 @@ position:absolute;
   font-family: 'Rubik', regular !important;
   line-height: 20px;
   font-size: 14px;
-  position: absolute;
-  top:-8px;
 }
 
 .user-def-primechanie_input .input-wrapper .fields-wrapper.input-border textarea.text_field.tooltip-area {
@@ -1293,37 +1286,6 @@ border-top-left-radius: 12px 4px !important;
 .user-def-primechanie_input textarea::-webkit-scrollbar-track {
   background-color: #ffffff !important;
 }
-.user-def-primechanie_input:after {
-    content: "";
-    position: absolute;
-    width: -webkit-calc(100% - 40px);
-    height: -webkit-calc(100% - 52px);
-    top: 36px;
-    right: 20px;
-    
-    z-index: 2;
-    background-color:  #ECEFF3;
-    pointer-events:none;
-    border-radius:4px;
-}
-
-.user-def-primechanie_input textarea  {
-    background-color: #380dd200 !important;
-    color: #000000 !important;
-    z-index: 3;
-    padding: 0px !important;
-    
-}
-.user-def-primechanie_input .field_container.textarea .center.row .input-wrapper .fields-wrapper.input-border {
-    background-color: white !important;
-}
-
-
-.user-def-primechanie_input .fields-wrapper.input-border {
-    background-color: #ffffff !important;
-}
-
-
 
 /* Настройка вертикальных отступов и высоты для кнопок приложения */
 
@@ -1663,9 +1625,9 @@ border-top-left-radius: 6px 4px !important;
 }
 
 
-.user-def-table_svjaz .ui-table-footer {
+/*.user-def-table_svjaz .ui-table-footer {
     border-top: 1px solid #E3E8ED!important;
-}
+}*/
 
 .user-def-jq_text0 .jq_text {
 	padding: 0px !important;
@@ -2066,5 +2028,5 @@ border-top-left-radius: 6px 4px !important;
 }
 
 .user-def-gray-label .label {
-  color: #747781 !important;
+    color: #747781 !important;
 }
