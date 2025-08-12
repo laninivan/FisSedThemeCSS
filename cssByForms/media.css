@@ -1,0 +1,15 @@
+@media (max-height: 900px) {
+    .user-def-app_table {
+      height: 300px !important;
+    }
+  }
+  @media (max-height: 700px) {
+    .user-def-app_table {
+      height: 200px !important;
+    }
+  }
+  @media (max-height: 600px) {
+    .user-def-app_table {
+      height: 150px !important;
+    }
+  }
